@@ -1,0 +1,262 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"CURR",
+				"CurrentVal"
+			],
+			[
+				"AUTO",
+				"AUTO_ID_CONSULTA"
+			],
+			[
+				"AUT",
+				"AUTO_ID_CONSULTA"
+			],
+			[
+				"ID",
+				"ID_ARTICULO"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"ti",
+				"title	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 593,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb"
+	],
+	"file_history":
+	[
+		"/C/wamp/www/altera.cl/sms/enviar2.php",
+		"/C/wamp/www/altera.cl/sms/enviar3.php",
+		"/C/wamp/www/altera.cl/sms/enviar4.php",
+		"/C/wamp/www/altera.cl/sms/enviar5.php",
+		"/C/wamp/www/altera.cl/sms/enviarkty.php",
+		"/C/wamp/www/altera.cl/sms/enviar.php",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/index.html",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/js/jquery.js",
+		"/D/Altera/Proyectos en GitHub/AlteraSMS/app/views/dashboard/index.blade.php",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/js/npm.js",
+		"/D/Altera/Proyectos en GitHub/AlteraSMS/app/commands/CheckSendSMS.php",
+		"/F/SantoTomas/Base de Datos/2016-04-20 - Solemne 1 - Katherine Nussbaum.sql",
+		"/F/Proyecto v1/Ejecutivo.java",
+		"/F/Proyecto v1/Persona.java",
+		"/G/SantoTomas/Base de Datos/guia 4.sql",
+		"/G/SantoTomas/Base de Datos/kty_bd_guia4.txt",
+		"/G/SantoTomas/Base de Datos/2016-03-08 Ejercicio 1.sql",
+		"/G/SantoTomas/Base de Datos/2016-03-14 Ejercicio 2.sql",
+		"/G/SantoTomas/Base de Datos/2016-04-20 - Solemne 1 - Katherine Nussbaum.sql",
+		"/G/SantoTomas/Base de Datos/kty_bd_guia3.txt",
+		"/G/SantoTomas/Base de Datos/guia 3.sql",
+		"/C/Users/Katherine Nussbaum/Downloads/Reporte-envio(2016-04-21) (3).txt",
+		"/D/SantoTomas/Semestre 3/Web/Solemne1.sql",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/Produccion/bootstrap-3.3.6-dist/bootstrap-3.3.6-dist/index.html",
+		"/D/SantoTomas/Semestre 3/Web/Guia1/1.html",
+		"/D/SantoTomas/Semestre 3/Web/Guia1/2.html",
+		"/D/SantoTomas/Semestre 3/Web/Guia1/3.html",
+		"/D/SantoTomas/Semestre 3/Web/Guía 2/1.html",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/index.html",
+		"/D/SantoTomas/Semestre 3/Web/Unidad 2/Semana 1/1- Texto/EjemploTextoDos.html",
+		"/D/SantoTomas/Semestre 3/Web/Unidad 2/Semana 1/1- Texto/EjemploTextoUno.html",
+		"/F/Katherine/Recursos/Web/bootstrap-3.3.6-dist/index.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"default"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								391,
+								391
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sitio.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 207.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
