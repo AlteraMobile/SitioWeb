@@ -4,19 +4,92 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/unslider.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/unslider-dots.css">
+
 	<title>Bienvenido</title>
 </head>
 <body>
-<h1>Prueba</h1>
+	<div id="header" class="container">
+		<div class="row">
+			<div class="col-lg-2">
+				<img src="#" id="logo" />
+			</div>
+			<div id="cont_buscador" class="col-lg-8">
+				<form action="#" metod="get">
+					<div class="form-group">
+						<input id="txt_buscar" type="text" class="form-control" name="txt_buscar" placeholder="Buscar">
 
-<p>Lorem ipsum</p>
+						<input type="submit" class="btn btn-default btn-info" value="Buscar">
+					</div>
+					
+						<label class="radio-inline">
+							<input type="radio" name="rd_buscar" value="titulo">Título
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="rd_buscar" value="actor">Actor
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="rd_buscar" value="director">Director
+						</label>
+					
+				</form>
+			</div>
+			<div id="cont_login" class="col-lg-2">
+				<button type="button" class="btn btn-success">Login</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="slider" class="container-fluid">
+
+		<div class="row">
+			<div class="my-slider">
+				<ul>
+					<li>
+						<div clas="container">
+							<div class="row">
+								<div class="col-lg-offset-1 col-lg-6">
+									<div class="titulo">
+										Capitan America
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						<img src="img/slider/captain_america.jpg">
+						
+
+					</li>
+					<li>Another slide</li>
+					<li>My last slide</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
 
 
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="dist/js/unslider-min.js"></script>
+<script>
+		jQuery(document).ready(function($) {
+			$('.my-slider').unslider({
+				autoplay: true,
+				arrows: true,
+				infinite: true
+				
+			});
+
+		});
+	</script>
 </body>
 </html>
