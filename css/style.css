@@ -83,10 +83,21 @@ body{
 }
 .grid-item { 
 	max-width: 250px;
-	background-color: #344456;
-	padding: 25px; 
+	background-color: #FFF;
+	border: 1px;
+	border-style: solid;
+	border-color: #AAA;
+	margin: 7px;
+	padding: 12px; 
+	border-radius: 15px;
 }
-
+.cont_caratula{
+	border-radius: 10px;
+	overflow: hidden;
+}
+.cont_caratula img{
+	width: 185px;
+}
 /*
 ==============================================================
 ======================================================= Footer
