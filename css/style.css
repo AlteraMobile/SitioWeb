@@ -1,7 +1,20 @@
+
+/*
+==============================================================
+================================================ Generalidades
+==============================================================
+*/
 body{
 	margin-top: 25px;
-	background-image: linear-gradient(90deg, #222, #000);
 }
+.clear{float: none; clear: both;}
+
+
+/*
+==============================================================
+======================================================= Header
+==============================================================
+*/
 #logo{
 	width: 120px; height: 120px;
 }
@@ -12,15 +25,26 @@ body{
 	width: 80%;
 	float: left;
 }
+.txt_right{
+	text-align: right;
+}
+.txt_left{
+	text-align: left;
+}
+/*
+==============================================================
+======================================================= Slider
+==============================================================
+*/
 #slider{
 	margin-top: 25px;
-	height: 350px;
-	background-color: ##666;
+	height: 450px;
+	background-color: #666;
 	display: block;
 }
 .my-slider{
 	display: block;
-	max-height: 450px;
+	height: 450px;
 	overflow: hidden;
 	position: relative;
 }
@@ -28,24 +52,50 @@ body{
 	text-shadow: 1px 1px #FFF;
 	position: absolute;
 	margin-top: 280px;
+	margin-bottom: 100px;
 	font-size: 50px;
 	color: orange;
 	display: block;
 	z-index: 100;
 }
+#division_slider{
+	margin-bottom: 140px;
+}
 .my-slider img {
 	max-height: 100%;
 	width: 100%;
-	z-index: 0;
+	z-index: -100;
 }
-.unslider{overflow:auto;margin:0;padding:0}
-.unslider-wrap{position:relative}
-.unslider-wrap.unslider-carousel>li{float:left}
-.unslider-vertical>ul{height:100%}
-.unslider-vertical li{float:none;width:100%}
-.unslider-fade{position:relative}
-.unslider-fade .unslider-wrap li{position:absolute;left:0;top:0;right:0;z-index:8}
-.unslider-fade .unslider-wrap li.unslider-active{z-index:10}
-.unslider li,.unslider ol,.unslider ul{list-style:none;margin:0;padding:0;border:none}
-.unslider-arrow{position:absolute;left:20px;z-index:2;cursor:pointer}
-.unslider-arrow.next{left:auto;right:20px}
+.unslider-arrow {
+    margin-top: -250px;
+}
+.unslider-nav{
+	display: none;
+}
+/*
+==============================================================
+==================================================== Contenido
+==============================================================
+*/
+#cont_contenido{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.grid-item { 
+	max-width: 250px;
+	background-color: #344456;
+	padding: 25px; 
+}
+
+/*
+==============================================================
+======================================================= Footer
+==============================================================
+*/
+#footer{
+	background-color: #333;
+	height: 150px;
+	color: #666;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}

@@ -75,11 +75,87 @@
 	</div>
 
 
+	<div id="cont_contenido" class="container">
+		<div class="row">
+			<div class="grid">
+				<div class="grid-item">
+					<img src="#" width="80px" height="110px">
+					Título de la pelicula
+				</div>
+			</div>
+
+			<div class="grid">
+				<div class="grid-item">
+					<img src="#" width="80px" height="110px">
+					Título de la pelicula
+				</div>
+			</div>
+
+			<div class="grid">
+				<div class="grid-item">
+					<img src="#" width="80px" height="110px">
+					Título de la pelicula
+				</div>
+			</div>
+
+			<div class="grid">
+				<div class="grid-item">
+					<img src="#" width="80px" height="110px">
+					Título de la pelicula
+				</div>
+			</div>
+
+			<div class="grid">
+				<div class="grid-item">
+					<img src="#" width="80px" height="110px">
+					Título de la pelicula
+				</div>
+			</div>
+
+			<div class="grid">
+				<div class="grid-item">
+					<img src="#" width="80px" height="110px">
+					Título de la pelicula
+				</div>
+			</div>
+
+			<div class="grid">
+				<div class="grid-item">
+					<img src="#" width="80px" height="110px">
+					Título de la pelicula
+				</div>
+			</div>
+
+			<div class="grid">
+				<div class="grid-item">
+					<img src="#" width="80px" height="110px">
+					Título de la pelicula
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="footer" class="container-fluid">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">Contenido del footer aqui.</div>
+					<div class="col-lg-6 txt_right">Contenido del footer aqui.</div>
+				</div>
+			</div>
+
+			
+		</div>
+
+	</div>
+
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="dist/js/unslider-min.js"></script>
+<script type="text/javascript" src="src/js/unslider.js"></script>
+<script type="text/javascript" src="js/masonry.js"></script>
 <script>
 		jQuery(document).ready(function($) {
 			$('.my-slider').unslider({
@@ -87,6 +163,11 @@
 				arrows: true,
 				infinite: true
 				
+			});
+
+			$('.grid').masonry({
+				itemSelector: '.grid-item',
+			 	columnWidth: 250
 			});
 
 		});
