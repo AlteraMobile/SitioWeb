@@ -7,9 +7,9 @@
 body{
 	margin-top: 25px;
 }
-.clear{float: none; clear: both;}
-
-
+.clear{ float: none; clear: both; }
+.bold{ font-weight: bold; }
+.txt_right{ text-align: right; }
 /*
 ==============================================================
 ======================================================= Header
@@ -30,6 +30,9 @@ body{
 }
 .txt_left{
 	text-align: left;
+}
+.txt_center{
+	text-align: center;
 }
 /*
 ==============================================================
@@ -81,8 +84,7 @@ body{
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
-.grid-item { 
-	max-width: 250px;
+.grid-item {
 	background-color: #FFF;
 	border: 1px;
 	border-style: solid;
@@ -90,13 +92,60 @@ body{
 	margin: 7px;
 	padding: 12px; 
 	border-radius: 15px;
+	max-width: 269px;
 }
 .cont_caratula{
+	margin-right: 7px;
+	margin-bottom: 7px;
+	width: 185px;
 	border-radius: 10px;
 	overflow: hidden;
+	float: left;
 }
 .cont_caratula img{
-	width: 185px;
+	float: left;
+}
+.grid-item .ranking{
+	width: 51px;
+    height: 40px;
+    display: block;
+    float: left;
+    text-align: center;
+    color: #FFF;
+    background-color: #333;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-top: 6px;
+}
+.grid-item h3{
+	margin-top: 7px;
+	clear: both;
+}
+.detalle, .min_critica, .max_critica p{
+	width: 240px;
+	font-size: 12px;
+	display: block;
+}
+.detalle{
+	border-top: dashed 1px #AAA;
+	border-bottom: dashed 1px #AAA;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+}
+.min_critica{
+	margin-top: 7px;
+	padding-top: 7px;
+}
+.max_critica p{
+
+	display: none;
+}
+.leer_mas {
+	width: 100%;
+	margin-top: 7px;
 }
 /*
 ==============================================================
