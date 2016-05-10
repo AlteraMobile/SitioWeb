@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<!--[if lt IE 9]> <script src=”http://HTML5shim.googlecode.com/svn/trunk/HTML5.js”> </script> <![endif]-->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +15,7 @@
 	<title>Bienvenido</title>
 </head>
 <body>
-	<div id="header" class="container">
+	<header class="container">
 		<div class="row">
 			<div class="col-lg-2">
 				<img src="#" id="logo" />
@@ -40,12 +41,13 @@
 				</form>
 			</div>
 			<div id="cont_login" class="col-lg-2">
-				<button type="button" class="btn btn-success">Login</button>
+				<button type="button" class="btn btn-info">Login</button>
 			</div>
+	      <p>&nbsp;</p>
 		</div>
-	</div>
+	</header>
 
-	<div id="slider" class="container-fluid">
+	<section id="slider" class="container-fluid">
 
 		<div class="row">
 			<div class="my-slider">
@@ -66,15 +68,17 @@
 						
 
 					</li>
-					<li>Another slide</li>
+					<li>
+						<iframe src="https://www.youtube.com/embed/uVdV-lxRPFo" frameborder="0" allowfullscreen></iframe>
+					</li>
 					<li>My last slide</li>
 				</ul>
 			</div>
 		</div>
 
-	</div>
+	</section>
 
-	<div id="cont_contenido" class="container">
+	<section id="cont_contenido" class="container">
 		<div class="row">
 			<div class="grid">
 
@@ -83,10 +87,16 @@
 						<img src="img/cover/captain_america_2011.jpg" >
 					</div>
 
-					<div class="ranking"> 74% </div>
-					<h3>Capitan America</h3>
+					<div class="ranking">4.5</div>
+					<hgroup>
+						<h1>Capitán América</h1>
+						<h3>Civil War</h3>
+					</hgroup>
+                    <a href="#">
+                    	<span class="glyphicon glyphicon-play play" aria-hidden="true"></span>
+                    </a>
 					<div class="detalle">
-						<table>
+						<table width="251">
 							<tr>
 								<td class="bold" width="100">Fecha Estreno:</td>
 								<td>01-01-2016</td>
@@ -129,7 +139,7 @@
 							</tr>
 
 						</table>
-					</div>
+				  </div>
 					<div class="min_critica">
 						Aqui va las primeras frases de la crítica de la película. 
 					</div>
@@ -150,8 +160,11 @@
 					<div class="cont_caratula">
 						<img src="img/cover/captain_america_2011.jpg" >
 					</div>
-					<div class="ranking"> 74% </div>
-					<h3>Capitan America</h3>
+					<div class="ranking">3.2</div>
+					<hgroup>
+						<h1>Capitan America</h1>
+						<h3>Subtitulo</h3>
+					</hgroup>
 					<div class="detalle">
 						<table>
 							<tr>
@@ -215,8 +228,11 @@
 					<div class="cont_caratula">
 						<img src="img/cover/captain_america_2011.jpg" >
 					</div>
-					<div class="ranking"> 74% </div>
-					<h3>Capitan America</h3>
+					<div class="ranking"> 5</div>
+					<hgroup>
+						<h1>Capitan America</h1>
+						<h3>Subtitulo</h3>
+					</hgroup>
 					<div class="detalle">
 						<table>
 							<tr>
@@ -280,8 +296,11 @@
 					<div class="cont_caratula">
 						<img src="img/cover/captain_america_2011.jpg" >
 					</div>
-					<div class="ranking"> 74% </div>
-					<h3>Capitan America</h3>
+					<div class="ranking"> 1.8</div>
+					<hgroup>
+						<h1>Capitan America</h1>
+						<h3>Subtitulo</h3>
+					</hgroup>
 					<div class="detalle">
 						<table>
 							<tr>
@@ -346,7 +365,10 @@
 						<img src="img/cover/captain_america_2011.jpg" >
 					</div>
 					<div class="ranking"> 74% </div>
-					<h3>Capitan America</h3>
+					<hgroup>
+						<h1>Capitan America</h1>
+						<h3>Subtitulo</h3>
+					</hgroup>
 					<div class="detalle">
 						<table>
 							<tr>
@@ -411,9 +433,14 @@
 			</div>
 
 		</div>
-	</div>
+        <section id="btn_cargar_mas" class="container-fluid">
+        		<div class="row">
+        		<button id="cargar_mas" type="button" class=" col-lg-offset-3 btn btn-default btn-info col-lg-6">Cargar más</button>
+            	</div>
+        </section>
+	</section>
 
-	<div id="footer" class="container-fluid">
+	<footer class="container-fluid">
 		<div class="row">
 			<div class="container">
 				<div class="row">
@@ -425,7 +452,7 @@
 			
 		</div>
 
-	</div>
+	</footer>
 
 
 <script type="text/javascript" src="js/jquery.js"></script>
