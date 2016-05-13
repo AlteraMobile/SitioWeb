@@ -13,10 +13,18 @@ jQuery(document).ready(function($) {
 	});
 
 	$( ".leer_mas" ).click(function() {
+		
 		var id = $(this).attr("id");
 		//alert(id);
+		if($(this).attr("value")=="Leer +"){
+			$(this).attr("value","Leer -");
+			}
+		else{
+			$(this).attr("value","Leer +");
+			};
   		$("#" + id + " p").toggle();
   		$grid.masonry();
+		
 
 	});
 

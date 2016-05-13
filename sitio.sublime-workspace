@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"wid",
+				"width"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"te",
+				"text-decoration-style"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"padi",
+				"padding-top"
+			],
+			[
+				"bord",
+				"border-top"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"font-st",
+				"font-style"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
 				"CURR",
 				"CurrentVal"
 			],
@@ -31,30 +87,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 4139,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/css/variables.less",
-			"settings":
-			{
-				"buffer_size": 515,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/style.css",
-			"settings":
-			{
-				"buffer_size": 2028,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -89,17 +121,33 @@
 	"expanded_folders":
 	[
 		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb",
-		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/css"
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/css",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/img",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/img/cover",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/js"
 	],
 	"file_history":
 	[
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/js/script.js",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/css/style.css",
+		"/c/xampp/php/logs/php_error_log",
+		"/C/xampp/apache/logs/access.log",
+		"/C/xampp/apache/logs/error.log",
+		"/C/xampp/php/php.ini",
+		"/C/xampp/phpMyAdmin/config.inc.php",
+		"/C/xampp/mysql/bin/my.ini",
+		"/C/xampp/apache/conf/extra/httpd-ssl.conf",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/index.html",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/xampp/apache/conf/extra/httpd-xampp.conf",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/src/css/variables.less",
+		"/C/Users/Katherine Nussbaum/Documents/GitHub/AlteraSMS/app/controllers/SendingCronController.php",
 		"/C/wamp/www/altera.cl/sms/enviar2.php",
 		"/C/wamp/www/altera.cl/sms/enviar3.php",
 		"/C/wamp/www/altera.cl/sms/enviar4.php",
 		"/C/wamp/www/altera.cl/sms/enviar5.php",
 		"/C/wamp/www/altera.cl/sms/enviarkty.php",
 		"/C/wamp/www/altera.cl/sms/enviar.php",
-		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/index.html",
 		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/js/jquery.js",
 		"/D/Altera/Proyectos en GitHub/AlteraSMS/app/views/dashboard/index.blade.php",
 		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/js/npm.js",
@@ -142,6 +190,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"exec",
+			"time",
+			"3306",
+			"443",
+			"4430",
+			"443",
+			"Listen",
+			"80",
+			"port",
+			"80",
 			"default"
 		],
 		"highlight": true,
@@ -160,94 +218,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4139,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								578,
-								578
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 108.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/css/variables.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 515,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								402,
-								402
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "css/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2028,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								619,
-								619
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 324.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -328,7 +300,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 207.0,
+	"side_bar_width": 146.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

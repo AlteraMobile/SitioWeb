@@ -6,8 +6,11 @@
 /*
 Fonts
 */
+
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,900,800,700,500,600,300,100,200);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800,600);
+
+
 body{
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 25px;
@@ -166,7 +169,7 @@ h3{
 	font-size: 12px;
 	display: block;
 }
-.detalle{
+.detalle, .stars{
 	margin-top: 7px;
 	margin-bottom: 7px;
 	padding-top: 7px;
@@ -178,6 +181,8 @@ h3{
 	border-top-color: #2BACD2;
 	border-bottom-color: #2BACD2;
 }
+.stars{
+	border-bottom:none;}
 
 .min_critica{
 	margin-top: 7px;
