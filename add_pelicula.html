@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/unslider.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/unslider-dots.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.css">
+
+	<title>Películas || Agregar</title>
+</head>
+<body>
+	<div id="contenido">
+	<header class="container">
+		<div class="row">
+
+			<nav class="navbar navbar-default ">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+	      				</button>
+			    	
+			      		<a class="navbar-brand" href="#">{ PeliCritix } <small>Administrador</small></a>
+			    	</div>
+			    	<div class="collapse navbar-collapse" id="menu">
+				    	<ul class="nav navbar-nav">
+				      		<li><a href="dashboard.html">
+				      			<span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+				      		<li class="dropdown active">
+				      			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				      				<span class="glyphicon glyphicon-film"></span> Cinamatrografía
+				      				<span class="caret"></span>
+			      				</a>
+			      				<ul class="dropdown-menu">
+			      					<li class="active"><a href="">Agregar película</a></li>
+			      					<li><a href="mod_pelicula.html">Modificar película</a></li>
+			      					<li><a href="del_pelicula.html">Eliminar película</a></li>
+			      				</ul>
+							</li>
+				      		<li class="dropdown">
+				      			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				      				<span class="glyphicon glyphicon-star-empty"></span> Actores
+				      				<span class="caret"></span>
+				      			</a>
+				      			<ul class="dropdown-menu">
+			      					<li><a href="add_actor.html">Agregar actor</a></li>
+			      					<li><a href="mod_actor.html">Modificar actor</a></li>
+			      					<li><a href="del_actor.html">Eliminar actor</a></li>
+			      				</ul>
+				      		</li>
+				      		<li class="dropdown">
+				      			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				      				<span class="glyphicon glyphicon-bullhorn"></span> Directores
+				      				<span class="caret"></span>
+				      			</a>
+				      			<ul class="dropdown-menu">
+			      					<li><a href="add_director.html">Agregar director</a></li>
+			      					<li><a href="mod_director.html">Modificar director</a></li>
+			      					<li><a href="del_director.html">Eliminar director</a></li>
+			      				</ul>
+				      		</li>
+				      		<li class="dropdown">
+				      			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				      				<span class="glyphicon glyphicon-picture"></span> Sliders
+				      				<span class="caret"></span>
+				      			</a>
+				      			<ul class="dropdown-menu">
+			      					<li><a href="add_slider.html">Agregar slider</a></li>
+			      					<li><a href="mod_slider.html">Modificar slider</a></li>
+			      					<li><a href="del_slider.html">Eliminar slider</a></li>
+			      				</ul>
+				      		</li>
+
+				    	</ul>
+				    	<ul class="nav navbar-nav navbar-right">
+					    	<li><a href="index.html">
+					    		<span class="glyphicon glyphicon-log-out"></span> Cerrar</a></li>
+					    </ul>
+					</div>
+			 	</div>
+			</nav>
+
+
+			<h1 class="col-lg-12">{ Películas } <small>Agregar</small></h1>
+
+		</div>
+	</header>
+
+
+	<section class="container">
+		<div class="row">
+
+			<form role="form" name="pelicula" onsubmit="return validarFormAddPelicula()">
+				<div class="form-group col-lg-4">
+					<label for="titulo">Título*</label>
+					<input type="text" class="form-control input-sm" id="titulo" name="titulo" placeholder="Título">
+				</div>
+				<div class="form-group col-lg-4">
+					<label for="subtitulo">Subtítulo*</label>
+					<input type="text" class="form-control input-sm" id="subtitulo" name="subtitulo" placeholder="Subtítulo">
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="estreno">Fecha de estreno</label>
+					<input type="date" class="form-control input-sm" id="estreno" name="estreno" placeholder="Fecha de estreno">
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="produccion">Año de producción</label>
+					<input type="text" class="form-control input-sm" id="produccion" name="produccion" placeholder="Año de producción">
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="duracion">Duración en minutos</label>
+					<input type="text" class="form-control input-sm" id="duracion" name="duracion" placeholder="Duración en minutos">
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="color">Color</label>
+					<select class="form-control input-sm" id="color" name="color">
+				        <option>Color</option>
+				        <option>Blanco y negro</option>
+      				</select>
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="genero">Genero</label>
+					<select class="form-control input-sm" id="genero" name="genero">
+						<option>Película</option>
+				        <option>Documental</option>
+				        <option>Cortmetraje</option>
+      				</select>
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="color">Director</label>
+					<select class="form-control input-sm" id="director" name="director">
+						<option>Director</option>
+				        <option>Spielberg</option>
+				        <option>Cohen</option>
+      				</select>
+				</div>
+				<div class="form-group col-lg-6">
+					<label>Lo mejor</label>
+					<input type="text" class="form-control input-sm" id="mejor" name="mejor" placeholder="Lo mejor">
+				</div>
+				<div class="form-group col-lg-6">
+					<label>Lo peor</label>
+					<input type="text" class="form-control input-sm" id="peor" name="peor" placeholder="Lo peor">
+				</div>
+				<div class="form-group col-lg-3">
+					<label>Imágen de Portada</label>
+					<input type="file" class="form-control input-sm" id="portada" name="portada" placeholder="Seleccione la imagen de portada.">
+				</div>
+				<div class="form-group col-lg-3">
+					<label>URL del trailer</label>
+					<input type="url" class="form-control input-sm" id="trailer" name="trailer" placeholder="URL del trailer">
+				</div>
+				<div class="form-group col-lg-3">
+					<label for="categoria">Categoría*</label>
+				    <select multiple class="form-control input-sm" id="categoria" name="categoria">
+					    <option>Acción</option>
+					    <option>Drama</option>
+					    <option>Comedia</option>
+					    <option>Terror</option>
+					    <option>Acción</option>
+					    <option>Drama</option>
+					    <option>Comedia</option>
+					    <option>Terror</option>
+				    </select>
+				</div>
+
+				<div class="form-group col-lg-3">
+					<label for="reparto">Reparto</label>
+				    <select multiple class="form-control input-sm" id="reparto" name="reparto">
+					    <option>Juan</option>
+					    <option>Maria</option>
+					    <option>Lukas</option>
+					    <option>Fernando</option>
+					    <option>Ignacia</option>
+				    </select>
+				</div>
+
+				<div class="form-group col-lg-12">
+  					<label for="critica">Crítica*</label>
+				  	<textarea class="form-control input-sm" rows="5" id="critica" name="critica"></textarea>
+				</div>
+				 <div class="clearfix visible-lg"></div>
+				<button type="submit" class="btn btn-default col-lg-2 col-lg-offset-5 btn-info">
+					<span class="glyphicon glyphicon-ok"></span> Agregar</button>
+
+			</form>
+			
+		</div>
+	</section>
+	</div>
+	<footer>
+		footer
+	</footer>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="src/js/unslider.js"></script>
+	<script type="text/javascript" src="js/masonry.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript">
+		// Validar formulario Login
+		function validarFormAddPelicula() {
+		    var titulo = document.forms["pelicula"]["titulo"].value;
+		    var subtitulo = document.forms["pelicula"]["subtitulo"].value;
+		    var categoria = document.forms["pelicula"]["categoria"].value;
+		    var critica = document.forms["pelicula"]["critica"].value;
+
+
+
+		    if (titulo == null || titulo == "") {
+		        alert("Debe ingresar un titulo.");
+		        return false;
+		    }
+		    if (subtitulo == null || subtitulo ==""){
+		    	alert("Debe ingresar un subtitulo.");
+		    	return false;
+		    }
+		    if (categoria == null || categoria ==""){
+		    	alert("Debe ingresar al menos una categoría.");
+		    	return false;
+		    }
+		    if (critica == null || critica ==""){
+		    	alert("Debe ingresar una crítica");
+		    	return false;
+		    }
+
+		}
+	</script>
+</body>
+</html>

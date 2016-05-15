@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 		
 		var id = $(this).attr("id");
 		//alert(id);
-		if($(this).attr("value")=="Leer +"){
+		if($(this).attr("value") == "Leer +"){
 			$(this).attr("value","Leer -");
 			}
 		else{
@@ -24,9 +24,11 @@ jQuery(document).ready(function($) {
 			};
   		$("#" + id + " p").toggle();
   		$grid.masonry();
-		
-
 	});
 
-
-		});
+	    $( "#estreno" ).datepicker({
+      		changeMonth: true,
+      		changeYear: true
+    	});
+		
+});

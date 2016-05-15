@@ -15,434 +15,437 @@
 	<title>Bienvenido</title>
 </head>
 <body>
-	<header class="container">
-		<div class="row">
-			<div class="col-lg-2">
-				<img src="#" id="logo" />
-			</div>
-			<div id="cont_buscador" class="col-lg-8">
-				<form action="#" metod="get">
-					<div class="form-group">
-						<input id="txt_buscar" type="text" class="form-control" name="txt_buscar" placeholder="Buscar">
 
-						<input type="submit" class="btn btn-default btn-info" value="Buscar">
-					</div>
-					
-						<label class="radio-inline">
-							<input type="radio" name="rd_buscar" value="titulo">Título
-						</label>
-						<label class="radio-inline">
-							<input type="radio" name="rd_buscar" value="actor">Actor
-						</label>
-						<label class="radio-inline">
-							<input type="radio" name="rd_buscar" value="director">Director
-						</label>
-					
-				</form>
-			</div>
-			<div id="cont_login" class="col-lg-2">
-				<button type="button" class="btn btn-info">Login</button>
-			</div>
-	      <p>&nbsp;</p>
-		</div>
-	</header>
+	<div id="contenido">
+		<header class="container">
+			<div class="row">
+				<div class="col-lg-2">
+					<img src="#" id="logo" />
+				</div>
+				<div id="cont_buscador" class="col-lg-8">
+					<form action="#" metod="get">
+						<div class="form-group">
+							<input id="txt_buscar" type="text" class="form-control" name="txt_buscar" placeholder="Buscar">
 
-	<section id="slider" class="container-fluid">
+							<input type="submit" class="btn btn-default btn-info" value="Buscar">
+						</div>
+						
+							<label class="radio-inline">
+								<input type="radio" name="rd_buscar" value="titulo">Título
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="rd_buscar" value="actor">Actor
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="rd_buscar" value="director">Director
+							</label>
+						
+					</form>
+				</div>
+				<div id="cont_login" class="col-lg-2">
+					<button type="button" class="btn btn-info" >Login</button>
+				</div>
+		      <p>&nbsp;</p>
+			</div>
+		</header>
+		
+		<section id="slider" class="container-fluid">
 
-		<div class="row">
-			<div class="my-slider">
-				<ul>
-					<li>
-						<div clas="container">
-							<div class="row">
-								<div class="col-lg-offset-1 col-lg-6">
-									<div class="titulo">
-										Capitan America
+			<div class="row">
+				<div class="my-slider">
+					<ul>
+						<li>
+							<div clas="container">
+								<div class="row">
+									<div class="col-lg-offset-1 col-lg-6">
+										<div class="titulo">
+											Capitan America
+										</div>
 									</div>
 								</div>
 							</div>
+							
+							
+							<img src="img/slider/captain_america.jpg">
+							
+
+						</li>
+						<li>
+							<iframe src="https://www.youtube.com/embed/uVdV-lxRPFo" frameborder="0" allowfullscreen></iframe>
+						</li>
+						<li>My last slide</li>
+					</ul>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="cont_contenido" class="container">
+			<div class="row">
+				<div class="grid">
+
+					<div class="grid-item" id="1">
+						<div class="cont_caratula">
+							<img src="img/cover/captain_america_2011.jpg" >
+						</div>
+
+						<div class="ranking">4.5</div>
+						<hgroup>
+							<h1>Capitán América</h1>
+							<h3>Civil War</h3>
+						</hgroup>
+	                    <a href="#">
+	                    	<span class="glyphicon glyphicon-play play" aria-hidden="true"></span>
+	                    </a>
+	                    <div class="stars">
+	                    Stars here
+	                    </div>
+						<div class="detalle">
+							<table width="251">
+								<tr>
+									<td class="bold" width="100">Fecha Estreno:</td>
+									<td>01-01-2016</td>
+								</tr>
+								<tr>
+									<td class="bold">Año de Producción:</td>
+									<td>2015</td>
+								</tr>
+								<tr>
+									<td class="bold">Duración:</td>
+									<td>120 min.</td>
+								</tr>
+								<tr>
+									<td class="bold">Color:</td>
+									<td>blanco y negro</td>
+								</tr>
+								<tr>
+									<td class="bold">Categoría:</td>
+									<td>Acción, Ciencia ficción</td>
+								</tr>
+								<tr>
+									<td class="bold">Genero:</td>
+									<td>Película</td>
+								</tr>
+								<tr>
+									<td class="bold">Reparto:</td>
+									<td>Juan Peréz, Gonzalo Fernández, María del Carmen</td>
+								</tr>
+								<tr>
+									<td class="bold">Director:</td>
+									<td>Fernando </td>
+								</tr>
+								<tr>
+									<td class="bold">Lo mejor:</td>
+									<td>Lo mejor de la película.</td>
+								</tr>
+								<tr>
+									<td class="bold">Lo peor:</td>
+									<td>Lo peor de la película</td>
+								</tr>
+
+							</table>
+					  </div>
+						<div class="min_critica">
+							Aqui va las primeras frases de la crítica de la película. 
+						</div>
+
+						<div id="1" class="max_critica">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim lobortis, ornare risus quis, ornare ligula. Mauris sagittis mi metus, ut commodo leo porttitor sed. Pellentesque efficitur venenatis scelerisque. Duis faucibus vitae magna condimentum facilisis. Suspendisse tempor lectus enim, eget sodales neque mattis non. Curabitur malesuada a turpis at facilisis. Quisque pellentesque pretium porttitor. Proin in ante in risus sollicitudin consequat. In gravida mollis enim, a commodo quam suscipit vel. Donec eu turpis enim. Aliquam ac dapibus quam. Etiam congue facilisis augue, eget porta lectus feugiat nec. Donec sodales ex ut massa consectetur consequat. Aliquam non risus at mi cursus interdum in id massa. Praesent mauris diam, laoreet sit amet hendrerit non, scelerisque ac justo. Duis consectetur magna augue, sed bibendum est molestie id.
+							</p>
+							<p>
+								Quisque vulputate, ante id pulvinar efficitur, magna velit faucibus est, eu placerat dolor sapien vel nisl. Morbi placerat mi sed efficitur rhoncus. Aenean ornare risus lacus, nec sodales nulla molestie ac. Morbi efficitur ullamcorper purus, id tempor lectus sollicitudin eget. Aenean sollicitudin dui eu scelerisque mattis. Proin sagittis augue sit amet luctus ornare. Nullam augue nisi, auctor sed pellentesque vel, scelerisque tincidunt urna. Aenean quis libero convallis, aliquet est id, aliquet libero. Donec congue velit ligula, nec porta magna blandit vel. Donec molestie elit at nisl bibendum, et finibus libero lobortis. Sed fermentum justo lacus, eu posuere sapien porta et. Pellentesque vel massa ac lorem ornare congue. Suspendisse quis laoreet neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+							</p>
+							<input id="1" class="btn btn-default btn-info leer_mas" value="Leer +">
 						</div>
 						
-						
-						<img src="img/slider/captain_america.jpg">
-						
-
-					</li>
-					<li>
-						<iframe src="https://www.youtube.com/embed/uVdV-lxRPFo" frameborder="0" allowfullscreen></iframe>
-					</li>
-					<li>My last slide</li>
-				</ul>
-			</div>
-		</div>
-
-	</section>
-
-	<section id="cont_contenido" class="container">
-		<div class="row">
-			<div class="grid">
-
-				<div class="grid-item" id="1">
-					<div class="cont_caratula">
-						<img src="img/cover/captain_america_2011.jpg" >
 					</div>
 
-					<div class="ranking">4.5</div>
-					<hgroup>
-						<h1>Capitán América</h1>
-						<h3>Civil War</h3>
-					</hgroup>
-                    <a href="#">
-                    	<span class="glyphicon glyphicon-play play" aria-hidden="true"></span>
-                    </a>
-                    <div class="stars">
-                    Stars here
-                    </div>
-					<div class="detalle">
-						<table width="251">
-							<tr>
-								<td class="bold" width="100">Fecha Estreno:</td>
-								<td>01-01-2016</td>
-							</tr>
-							<tr>
-								<td class="bold">Año de Producción:</td>
-								<td>2015</td>
-							</tr>
-							<tr>
-								<td class="bold">Duración:</td>
-								<td>120 min.</td>
-							</tr>
-							<tr>
-								<td class="bold">Color:</td>
-								<td>blanco y negro</td>
-							</tr>
-							<tr>
-								<td class="bold">Categoría:</td>
-								<td>Acción, Ciencia ficción</td>
-							</tr>
-							<tr>
-								<td class="bold">Genero:</td>
-								<td>Película</td>
-							</tr>
-							<tr>
-								<td class="bold">Reparto:</td>
-								<td>Juan Peréz, Gonzalo Fernández, María del Carmen</td>
-							</tr>
-							<tr>
-								<td class="bold">Director:</td>
-								<td>Fernando </td>
-							</tr>
-							<tr>
-								<td class="bold">Lo mejor:</td>
-								<td>Lo mejor de la película.</td>
-							</tr>
-							<tr>
-								<td class="bold">Lo peor:</td>
-								<td>Lo peor de la película</td>
-							</tr>
+					<div class="grid-item">
+						<div class="cont_caratula">
+							<img src="img/cover/captain_america_2011.jpg" >
+						</div>
+						<div class="ranking">3.2</div>
+						<hgroup>
+							<h1>Capitan America</h1>
+							<h3>Subtitulo</h3>
+						</hgroup>
+						<div class="detalle">
+							<table>
+								<tr>
+									<td class="bold" width="100">Fecha Estreno:</td>
+									<td>01-01-2016</td>
+								</tr>
+								<tr>
+									<td class="bold">Año de Producción:</td>
+									<td>2015</td>
+								</tr>
+								<tr>
+									<td class="bold">Duración:</td>
+									<td>120 min.</td>
+								</tr>
+								<tr>
+									<td class="bold">Color:</td>
+									<td>blanco y negro</td>
+								</tr>
+								<tr>
+									<td class="bold">Categoría:</td>
+									<td>Acción, Ciencia ficción</td>
+								</tr>
+								<tr>
+									<td class="bold">Genero:</td>
+									<td>Película</td>
+								</tr>
+								<tr>
+									<td class="bold">Reparto:</td>
+									<td>Juan Peréz, Gonzalo Fernández, María del Carmen</td>
+								</tr>
+								<tr>
+									<td class="bold">Director:</td>
+									<td>Fernando </td>
+								</tr>
+								<tr>
+									<td class="bold">Lo mejor:</td>
+									<td>Lo mejor de la película.</td>
+								</tr>
+								<tr>
+									<td class="bold">Lo peor:</td>
+									<td>Lo peor de la película</td>
+								</tr>
 
-						</table>
-				  </div>
-					<div class="min_critica">
-						Aqui va las primeras frases de la crítica de la película. 
+							</table>
+						</div>
+						<div class="min_critica">
+							Aqui va las primeras frases de la crítica de la película. 
+						</div>
+						<div id="2" class="max_critica">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim lobortis, ornare risus quis, ornare ligula. Mauris sagittis mi metus, ut commodo leo porttitor sed. Pellentesque efficitur venenatis scelerisque. Duis faucibus vitae magna condimentum facilisis. Suspendisse tempor lectus enim, eget sodales neque mattis non. Curabitur malesuada a turpis at facilisis. Quisque pellentesque pretium porttitor. Proin in ante in risus sollicitudin consequat. In gravida mollis enim, a commodo quam suscipit vel. Donec eu turpis enim. Aliquam ac dapibus quam. Etiam congue facilisis augue, eget porta lectus feugiat nec. Donec sodales ex ut massa consectetur consequat. Aliquam non risus at mi cursus interdum in id massa. Praesent mauris diam, laoreet sit amet hendrerit non, scelerisque ac justo. Duis consectetur magna augue, sed bibendum est molestie id.
+							</p>
+							<p>
+								Quisque vulputate, ante id pulvinar efficitur, magna velit faucibus est, eu placerat dolor sapien vel nisl. Morbi placerat mi sed efficitur rhoncus. Aenean ornare risus lacus, nec sodales nulla molestie ac. Morbi efficitur ullamcorper purus, id tempor lectus sollicitudin eget. Aenean sollicitudin dui eu scelerisque mattis. Proin sagittis augue sit amet luctus ornare. Nullam augue nisi, auctor sed pellentesque vel, scelerisque tincidunt urna. Aenean quis libero convallis, aliquet est id, aliquet libero. Donec congue velit ligula, nec porta magna blandit vel. Donec molestie elit at nisl bibendum, et finibus libero lobortis. Sed fermentum justo lacus, eu posuere sapien porta et. Pellentesque vel massa ac lorem ornare congue. Suspendisse quis laoreet neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+							</p>
+							<input id="2" class="btn btn-default btn-info leer_mas" value="Leer +">
+						</div>
 					</div>
 
-					<div id="1" class="max_critica">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim lobortis, ornare risus quis, ornare ligula. Mauris sagittis mi metus, ut commodo leo porttitor sed. Pellentesque efficitur venenatis scelerisque. Duis faucibus vitae magna condimentum facilisis. Suspendisse tempor lectus enim, eget sodales neque mattis non. Curabitur malesuada a turpis at facilisis. Quisque pellentesque pretium porttitor. Proin in ante in risus sollicitudin consequat. In gravida mollis enim, a commodo quam suscipit vel. Donec eu turpis enim. Aliquam ac dapibus quam. Etiam congue facilisis augue, eget porta lectus feugiat nec. Donec sodales ex ut massa consectetur consequat. Aliquam non risus at mi cursus interdum in id massa. Praesent mauris diam, laoreet sit amet hendrerit non, scelerisque ac justo. Duis consectetur magna augue, sed bibendum est molestie id.
-						</p>
-						<p>
-							Quisque vulputate, ante id pulvinar efficitur, magna velit faucibus est, eu placerat dolor sapien vel nisl. Morbi placerat mi sed efficitur rhoncus. Aenean ornare risus lacus, nec sodales nulla molestie ac. Morbi efficitur ullamcorper purus, id tempor lectus sollicitudin eget. Aenean sollicitudin dui eu scelerisque mattis. Proin sagittis augue sit amet luctus ornare. Nullam augue nisi, auctor sed pellentesque vel, scelerisque tincidunt urna. Aenean quis libero convallis, aliquet est id, aliquet libero. Donec congue velit ligula, nec porta magna blandit vel. Donec molestie elit at nisl bibendum, et finibus libero lobortis. Sed fermentum justo lacus, eu posuere sapien porta et. Pellentesque vel massa ac lorem ornare congue. Suspendisse quis laoreet neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						</p>
-						<input id="1" class="btn btn-default btn-info leer_mas" value="Leer +">
-					</div>
-					
-				</div>
+					<div class="grid-item">
+						<div class="cont_caratula">
+							<img src="img/cover/captain_america_2011.jpg" >
+						</div>
+						<div class="ranking"> 5</div>
+						<hgroup>
+							<h1>Capitan America</h1>
+							<h3>Subtitulo</h3>
+						</hgroup>
+						<div class="detalle">
+							<table>
+								<tr>
+									<td class="bold" width="100">Fecha Estreno:</td>
+									<td>01-01-2016</td>
+								</tr>
+								<tr>
+									<td class="bold">Año de Producción:</td>
+									<td>2015</td>
+								</tr>
+								<tr>
+									<td class="bold">Duración:</td>
+									<td>120 min.</td>
+								</tr>
+								<tr>
+									<td class="bold">Color:</td>
+									<td>blanco y negro</td>
+								</tr>
+								<tr>
+									<td class="bold">Categoría:</td>
+									<td>Acción, Ciencia ficción</td>
+								</tr>
+								<tr>
+									<td class="bold">Genero:</td>
+									<td>Película</td>
+								</tr>
+								<tr>
+									<td class="bold">Reparto:</td>
+									<td>Juan Peréz, Gonzalo Fernández, María del Carmen</td>
+								</tr>
+								<tr>
+									<td class="bold">Director:</td>
+									<td>Fernando </td>
+								</tr>
+								<tr>
+									<td class="bold">Lo mejor:</td>
+									<td>Lo mejor de la película.</td>
+								</tr>
+								<tr>
+									<td class="bold">Lo peor:</td>
+									<td>Lo peor de la película</td>
+								</tr>
 
-				<div class="grid-item">
-					<div class="cont_caratula">
-						<img src="img/cover/captain_america_2011.jpg" >
+							</table>
+						</div>
+						<div class="min_critica">
+							Aqui va las primeras frases de la crítica de la película. 
+						</div>
+						<div id="3" class="max_critica">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim lobortis, ornare risus quis, ornare ligula. Mauris sagittis mi metus, ut commodo leo porttitor sed. Pellentesque efficitur venenatis scelerisque. Duis faucibus vitae magna condimentum facilisis. Suspendisse tempor lectus enim, eget sodales neque mattis non. Curabitur malesuada a turpis at facilisis. Quisque pellentesque pretium porttitor. Proin in ante in risus sollicitudin consequat. In gravida mollis enim, a commodo quam suscipit vel. Donec eu turpis enim. Aliquam ac dapibus quam. Etiam congue facilisis augue, eget porta lectus feugiat nec. Donec sodales ex ut massa consectetur consequat. Aliquam non risus at mi cursus interdum in id massa. Praesent mauris diam, laoreet sit amet hendrerit non, scelerisque ac justo. Duis consectetur magna augue, sed bibendum est molestie id.
+							</p>
+							<p>
+								Quisque vulputate, ante id pulvinar efficitur, magna velit faucibus est, eu placerat dolor sapien vel nisl. Morbi placerat mi sed efficitur rhoncus. Aenean ornare risus lacus, nec sodales nulla molestie ac. Morbi efficitur ullamcorper purus, id tempor lectus sollicitudin eget. Aenean sollicitudin dui eu scelerisque mattis. Proin sagittis augue sit amet luctus ornare. Nullam augue nisi, auctor sed pellentesque vel, scelerisque tincidunt urna. Aenean quis libero convallis, aliquet est id, aliquet libero. Donec congue velit ligula, nec porta magna blandit vel. Donec molestie elit at nisl bibendum, et finibus libero lobortis. Sed fermentum justo lacus, eu posuere sapien porta et. Pellentesque vel massa ac lorem ornare congue. Suspendisse quis laoreet neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+							</p>
+							<input id="3" class="btn btn-default btn-info leer_mas" value="Leer +">
+						</div>
 					</div>
-					<div class="ranking">3.2</div>
-					<hgroup>
-						<h1>Capitan America</h1>
-						<h3>Subtitulo</h3>
-					</hgroup>
-					<div class="detalle">
-						<table>
-							<tr>
-								<td class="bold" width="100">Fecha Estreno:</td>
-								<td>01-01-2016</td>
-							</tr>
-							<tr>
-								<td class="bold">Año de Producción:</td>
-								<td>2015</td>
-							</tr>
-							<tr>
-								<td class="bold">Duración:</td>
-								<td>120 min.</td>
-							</tr>
-							<tr>
-								<td class="bold">Color:</td>
-								<td>blanco y negro</td>
-							</tr>
-							<tr>
-								<td class="bold">Categoría:</td>
-								<td>Acción, Ciencia ficción</td>
-							</tr>
-							<tr>
-								<td class="bold">Genero:</td>
-								<td>Película</td>
-							</tr>
-							<tr>
-								<td class="bold">Reparto:</td>
-								<td>Juan Peréz, Gonzalo Fernández, María del Carmen</td>
-							</tr>
-							<tr>
-								<td class="bold">Director:</td>
-								<td>Fernando </td>
-							</tr>
-							<tr>
-								<td class="bold">Lo mejor:</td>
-								<td>Lo mejor de la película.</td>
-							</tr>
-							<tr>
-								<td class="bold">Lo peor:</td>
-								<td>Lo peor de la película</td>
-							</tr>
 
-						</table>
-					</div>
-					<div class="min_critica">
-						Aqui va las primeras frases de la crítica de la película. 
-					</div>
-					<div id="2" class="max_critica">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim lobortis, ornare risus quis, ornare ligula. Mauris sagittis mi metus, ut commodo leo porttitor sed. Pellentesque efficitur venenatis scelerisque. Duis faucibus vitae magna condimentum facilisis. Suspendisse tempor lectus enim, eget sodales neque mattis non. Curabitur malesuada a turpis at facilisis. Quisque pellentesque pretium porttitor. Proin in ante in risus sollicitudin consequat. In gravida mollis enim, a commodo quam suscipit vel. Donec eu turpis enim. Aliquam ac dapibus quam. Etiam congue facilisis augue, eget porta lectus feugiat nec. Donec sodales ex ut massa consectetur consequat. Aliquam non risus at mi cursus interdum in id massa. Praesent mauris diam, laoreet sit amet hendrerit non, scelerisque ac justo. Duis consectetur magna augue, sed bibendum est molestie id.
-						</p>
-						<p>
-							Quisque vulputate, ante id pulvinar efficitur, magna velit faucibus est, eu placerat dolor sapien vel nisl. Morbi placerat mi sed efficitur rhoncus. Aenean ornare risus lacus, nec sodales nulla molestie ac. Morbi efficitur ullamcorper purus, id tempor lectus sollicitudin eget. Aenean sollicitudin dui eu scelerisque mattis. Proin sagittis augue sit amet luctus ornare. Nullam augue nisi, auctor sed pellentesque vel, scelerisque tincidunt urna. Aenean quis libero convallis, aliquet est id, aliquet libero. Donec congue velit ligula, nec porta magna blandit vel. Donec molestie elit at nisl bibendum, et finibus libero lobortis. Sed fermentum justo lacus, eu posuere sapien porta et. Pellentesque vel massa ac lorem ornare congue. Suspendisse quis laoreet neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						</p>
-						<input id="2" class="btn btn-default btn-info leer_mas" value="Leer +">
-					</div>
-				</div>
+					<div class="grid-item">
+						<div class="cont_caratula">
+							<img src="img/cover/captain_america_2011.jpg" >
+						</div>
+						<div class="ranking"> 1.8</div>
+						<hgroup>
+							<h1>Capitan America</h1>
+							<h3>Subtitulo</h3>
+						</hgroup>
+						<div class="detalle">
+							<table>
+								<tr>
+									<td class="bold" width="100">Fecha Estreno:</td>
+									<td>01-01-2016</td>
+								</tr>
+								<tr>
+									<td class="bold">Año de Producción:</td>
+									<td>2015</td>
+								</tr>
+								<tr>
+									<td class="bold">Duración:</td>
+									<td>120 min.</td>
+								</tr>
+								<tr>
+									<td class="bold">Color:</td>
+									<td>blanco y negro</td>
+								</tr>
+								<tr>
+									<td class="bold">Categoría:</td>
+									<td>Acción, Ciencia ficción</td>
+								</tr>
+								<tr>
+									<td class="bold">Genero:</td>
+									<td>Película</td>
+								</tr>
+								<tr>
+									<td class="bold">Reparto:</td>
+									<td>Juan Peréz, Gonzalo Fernández, María del Carmen</td>
+								</tr>
+								<tr>
+									<td class="bold">Director:</td>
+									<td>Fernando </td>
+								</tr>
+								<tr>
+									<td class="bold">Lo mejor:</td>
+									<td>Lo mejor de la película.</td>
+								</tr>
+								<tr>
+									<td class="bold">Lo peor:</td>
+									<td>Lo peor de la película</td>
+								</tr>
 
-				<div class="grid-item">
-					<div class="cont_caratula">
-						<img src="img/cover/captain_america_2011.jpg" >
+							</table>
+						</div>
+						<div class="min_critica">
+							Aqui va las primeras frases de la crítica de la película. 
+						</div>
+						<div id="4" class="max_critica">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim lobortis, ornare risus quis, ornare ligula. Mauris sagittis mi metus, ut commodo leo porttitor sed. Pellentesque efficitur venenatis scelerisque. Duis faucibus vitae magna condimentum facilisis. Suspendisse tempor lectus enim, eget sodales neque mattis non. Curabitur malesuada a turpis at facilisis. Quisque pellentesque pretium porttitor. Proin in ante in risus sollicitudin consequat. In gravida mollis enim, a commodo quam suscipit vel. Donec eu turpis enim. Aliquam ac dapibus quam. Etiam congue facilisis augue, eget porta lectus feugiat nec. Donec sodales ex ut massa consectetur consequat. Aliquam non risus at mi cursus interdum in id massa. Praesent mauris diam, laoreet sit amet hendrerit non, scelerisque ac justo. Duis consectetur magna augue, sed bibendum est molestie id.
+							</p>
+							<p>
+								Quisque vulputate, ante id pulvinar efficitur, magna velit faucibus est, eu placerat dolor sapien vel nisl. Morbi placerat mi sed efficitur rhoncus. Aenean ornare risus lacus, nec sodales nulla molestie ac. Morbi efficitur ullamcorper purus, id tempor lectus sollicitudin eget. Aenean sollicitudin dui eu scelerisque mattis. Proin sagittis augue sit amet luctus ornare. Nullam augue nisi, auctor sed pellentesque vel, scelerisque tincidunt urna. Aenean quis libero convallis, aliquet est id, aliquet libero. Donec congue velit ligula, nec porta magna blandit vel. Donec molestie elit at nisl bibendum, et finibus libero lobortis. Sed fermentum justo lacus, eu posuere sapien porta et. Pellentesque vel massa ac lorem ornare congue. Suspendisse quis laoreet neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+							</p>
+							<input id="4" class="btn btn-default btn-info leer_mas" value="Leer +">
+						</div>
 					</div>
-					<div class="ranking"> 5</div>
-					<hgroup>
-						<h1>Capitan America</h1>
-						<h3>Subtitulo</h3>
-					</hgroup>
-					<div class="detalle">
-						<table>
-							<tr>
-								<td class="bold" width="100">Fecha Estreno:</td>
-								<td>01-01-2016</td>
-							</tr>
-							<tr>
-								<td class="bold">Año de Producción:</td>
-								<td>2015</td>
-							</tr>
-							<tr>
-								<td class="bold">Duración:</td>
-								<td>120 min.</td>
-							</tr>
-							<tr>
-								<td class="bold">Color:</td>
-								<td>blanco y negro</td>
-							</tr>
-							<tr>
-								<td class="bold">Categoría:</td>
-								<td>Acción, Ciencia ficción</td>
-							</tr>
-							<tr>
-								<td class="bold">Genero:</td>
-								<td>Película</td>
-							</tr>
-							<tr>
-								<td class="bold">Reparto:</td>
-								<td>Juan Peréz, Gonzalo Fernández, María del Carmen</td>
-							</tr>
-							<tr>
-								<td class="bold">Director:</td>
-								<td>Fernando </td>
-							</tr>
-							<tr>
-								<td class="bold">Lo mejor:</td>
-								<td>Lo mejor de la película.</td>
-							</tr>
-							<tr>
-								<td class="bold">Lo peor:</td>
-								<td>Lo peor de la película</td>
-							</tr>
 
-						</table>
-					</div>
-					<div class="min_critica">
-						Aqui va las primeras frases de la crítica de la película. 
-					</div>
-					<div id="3" class="max_critica">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim lobortis, ornare risus quis, ornare ligula. Mauris sagittis mi metus, ut commodo leo porttitor sed. Pellentesque efficitur venenatis scelerisque. Duis faucibus vitae magna condimentum facilisis. Suspendisse tempor lectus enim, eget sodales neque mattis non. Curabitur malesuada a turpis at facilisis. Quisque pellentesque pretium porttitor. Proin in ante in risus sollicitudin consequat. In gravida mollis enim, a commodo quam suscipit vel. Donec eu turpis enim. Aliquam ac dapibus quam. Etiam congue facilisis augue, eget porta lectus feugiat nec. Donec sodales ex ut massa consectetur consequat. Aliquam non risus at mi cursus interdum in id massa. Praesent mauris diam, laoreet sit amet hendrerit non, scelerisque ac justo. Duis consectetur magna augue, sed bibendum est molestie id.
-						</p>
-						<p>
-							Quisque vulputate, ante id pulvinar efficitur, magna velit faucibus est, eu placerat dolor sapien vel nisl. Morbi placerat mi sed efficitur rhoncus. Aenean ornare risus lacus, nec sodales nulla molestie ac. Morbi efficitur ullamcorper purus, id tempor lectus sollicitudin eget. Aenean sollicitudin dui eu scelerisque mattis. Proin sagittis augue sit amet luctus ornare. Nullam augue nisi, auctor sed pellentesque vel, scelerisque tincidunt urna. Aenean quis libero convallis, aliquet est id, aliquet libero. Donec congue velit ligula, nec porta magna blandit vel. Donec molestie elit at nisl bibendum, et finibus libero lobortis. Sed fermentum justo lacus, eu posuere sapien porta et. Pellentesque vel massa ac lorem ornare congue. Suspendisse quis laoreet neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						</p>
-						<input id="3" class="btn btn-default btn-info leer_mas" value="Leer +">
-					</div>
-				</div>
+					<div class="grid-item">
+						<div class="cont_caratula">
+							<img src="img/cover/captain_america_2011.jpg" >
+						</div>
+						<div class="ranking"> 74% </div>
+						<hgroup>
+							<h1>Capitan America</h1>
+							<h3>Subtitulo</h3>
+						</hgroup>
+						<div class="detalle">
+							<table>
+								<tr>
+									<td class="bold" width="100">Fecha Estreno:</td>
+									<td>01-01-2016</td>
+								</tr>
+								<tr>
+									<td class="bold">Año de Producción:</td>
+									<td>2015</td>
+								</tr>
+								<tr>
+									<td class="bold">Duración:</td>
+									<td>120 min.</td>
+								</tr>
+								<tr>
+									<td class="bold">Color:</td>
+									<td>blanco y negro</td>
+								</tr>
+								<tr>
+									<td class="bold">Categoría:</td>
+									<td>Acción, Ciencia ficción</td>
+								</tr>
+								<tr>
+									<td class="bold">Genero:</td>
+									<td>Película</td>
+								</tr>
+								<tr>
+									<td class="bold">Reparto:</td>
+									<td>Juan Peréz, Gonzalo Fernández, María del Carmen</td>
+								</tr>
+								<tr>
+									<td class="bold">Director:</td>
+									<td>Fernando </td>
+								</tr>
+								<tr>
+									<td class="bold">Lo mejor:</td>
+									<td>Lo mejor de la película.</td>
+								</tr>
+								<tr>
+									<td class="bold">Lo peor:</td>
+									<td>Lo peor de la película</td>
+								</tr>
 
-				<div class="grid-item">
-					<div class="cont_caratula">
-						<img src="img/cover/captain_america_2011.jpg" >
+							</table>
+						</div>
+						<div class="min_critica">
+							Aqui va las primeras frases de la crítica de la película. 
+						</div>
+						<div id="5" class="max_critica">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim lobortis, ornare risus quis, ornare ligula. Mauris sagittis mi metus, ut commodo leo porttitor sed. Pellentesque efficitur venenatis scelerisque. Duis faucibus vitae magna condimentum facilisis. Suspendisse tempor lectus enim, eget sodales neque mattis non. Curabitur malesuada a turpis at facilisis. Quisque pellentesque pretium porttitor. Proin in ante in risus sollicitudin consequat. In gravida mollis enim, a commodo quam suscipit vel. Donec eu turpis enim. Aliquam ac dapibus quam. Etiam congue facilisis augue, eget porta lectus feugiat nec. Donec sodales ex ut massa consectetur consequat. Aliquam non risus at mi cursus interdum in id massa. Praesent mauris diam, laoreet sit amet hendrerit non, scelerisque ac justo. Duis consectetur magna augue, sed bibendum est molestie id.
+							</p>
+							<p>
+								Quisque vulputate, ante id pulvinar efficitur, magna velit faucibus est, eu placerat dolor sapien vel nisl. Morbi placerat mi sed efficitur rhoncus. Aenean ornare risus lacus, nec sodales nulla molestie ac. Morbi efficitur ullamcorper purus, id tempor lectus sollicitudin eget. Aenean sollicitudin dui eu scelerisque mattis. Proin sagittis augue sit amet luctus ornare. Nullam augue nisi, auctor sed pellentesque vel, scelerisque tincidunt urna. Aenean quis libero convallis, aliquet est id, aliquet libero. Donec congue velit ligula, nec porta magna blandit vel. Donec molestie elit at nisl bibendum, et finibus libero lobortis. Sed fermentum justo lacus, eu posuere sapien porta et. Pellentesque vel massa ac lorem ornare congue. Suspendisse quis laoreet neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+							</p>
+							<input id="5" class="btn btn-default btn-info leer_mas" value="Leer +">
+						</div>
 					</div>
-					<div class="ranking"> 1.8</div>
-					<hgroup>
-						<h1>Capitan America</h1>
-						<h3>Subtitulo</h3>
-					</hgroup>
-					<div class="detalle">
-						<table>
-							<tr>
-								<td class="bold" width="100">Fecha Estreno:</td>
-								<td>01-01-2016</td>
-							</tr>
-							<tr>
-								<td class="bold">Año de Producción:</td>
-								<td>2015</td>
-							</tr>
-							<tr>
-								<td class="bold">Duración:</td>
-								<td>120 min.</td>
-							</tr>
-							<tr>
-								<td class="bold">Color:</td>
-								<td>blanco y negro</td>
-							</tr>
-							<tr>
-								<td class="bold">Categoría:</td>
-								<td>Acción, Ciencia ficción</td>
-							</tr>
-							<tr>
-								<td class="bold">Genero:</td>
-								<td>Película</td>
-							</tr>
-							<tr>
-								<td class="bold">Reparto:</td>
-								<td>Juan Peréz, Gonzalo Fernández, María del Carmen</td>
-							</tr>
-							<tr>
-								<td class="bold">Director:</td>
-								<td>Fernando </td>
-							</tr>
-							<tr>
-								<td class="bold">Lo mejor:</td>
-								<td>Lo mejor de la película.</td>
-							</tr>
-							<tr>
-								<td class="bold">Lo peor:</td>
-								<td>Lo peor de la película</td>
-							</tr>
 
-						</table>
 					</div>
-					<div class="min_critica">
-						Aqui va las primeras frases de la crítica de la película. 
-					</div>
-					<div id="4" class="max_critica">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim lobortis, ornare risus quis, ornare ligula. Mauris sagittis mi metus, ut commodo leo porttitor sed. Pellentesque efficitur venenatis scelerisque. Duis faucibus vitae magna condimentum facilisis. Suspendisse tempor lectus enim, eget sodales neque mattis non. Curabitur malesuada a turpis at facilisis. Quisque pellentesque pretium porttitor. Proin in ante in risus sollicitudin consequat. In gravida mollis enim, a commodo quam suscipit vel. Donec eu turpis enim. Aliquam ac dapibus quam. Etiam congue facilisis augue, eget porta lectus feugiat nec. Donec sodales ex ut massa consectetur consequat. Aliquam non risus at mi cursus interdum in id massa. Praesent mauris diam, laoreet sit amet hendrerit non, scelerisque ac justo. Duis consectetur magna augue, sed bibendum est molestie id.
-						</p>
-						<p>
-							Quisque vulputate, ante id pulvinar efficitur, magna velit faucibus est, eu placerat dolor sapien vel nisl. Morbi placerat mi sed efficitur rhoncus. Aenean ornare risus lacus, nec sodales nulla molestie ac. Morbi efficitur ullamcorper purus, id tempor lectus sollicitudin eget. Aenean sollicitudin dui eu scelerisque mattis. Proin sagittis augue sit amet luctus ornare. Nullam augue nisi, auctor sed pellentesque vel, scelerisque tincidunt urna. Aenean quis libero convallis, aliquet est id, aliquet libero. Donec congue velit ligula, nec porta magna blandit vel. Donec molestie elit at nisl bibendum, et finibus libero lobortis. Sed fermentum justo lacus, eu posuere sapien porta et. Pellentesque vel massa ac lorem ornare congue. Suspendisse quis laoreet neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						</p>
-						<input id="4" class="btn btn-default btn-info leer_mas" value="Leer +">
-					</div>
-				</div>
-
-				<div class="grid-item">
-					<div class="cont_caratula">
-						<img src="img/cover/captain_america_2011.jpg" >
-					</div>
-					<div class="ranking"> 74% </div>
-					<hgroup>
-						<h1>Capitan America</h1>
-						<h3>Subtitulo</h3>
-					</hgroup>
-					<div class="detalle">
-						<table>
-							<tr>
-								<td class="bold" width="100">Fecha Estreno:</td>
-								<td>01-01-2016</td>
-							</tr>
-							<tr>
-								<td class="bold">Año de Producción:</td>
-								<td>2015</td>
-							</tr>
-							<tr>
-								<td class="bold">Duración:</td>
-								<td>120 min.</td>
-							</tr>
-							<tr>
-								<td class="bold">Color:</td>
-								<td>blanco y negro</td>
-							</tr>
-							<tr>
-								<td class="bold">Categoría:</td>
-								<td>Acción, Ciencia ficción</td>
-							</tr>
-							<tr>
-								<td class="bold">Genero:</td>
-								<td>Película</td>
-							</tr>
-							<tr>
-								<td class="bold">Reparto:</td>
-								<td>Juan Peréz, Gonzalo Fernández, María del Carmen</td>
-							</tr>
-							<tr>
-								<td class="bold">Director:</td>
-								<td>Fernando </td>
-							</tr>
-							<tr>
-								<td class="bold">Lo mejor:</td>
-								<td>Lo mejor de la película.</td>
-							</tr>
-							<tr>
-								<td class="bold">Lo peor:</td>
-								<td>Lo peor de la película</td>
-							</tr>
-
-						</table>
-					</div>
-					<div class="min_critica">
-						Aqui va las primeras frases de la crítica de la película. 
-					</div>
-					<div id="5" class="max_critica">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim lobortis, ornare risus quis, ornare ligula. Mauris sagittis mi metus, ut commodo leo porttitor sed. Pellentesque efficitur venenatis scelerisque. Duis faucibus vitae magna condimentum facilisis. Suspendisse tempor lectus enim, eget sodales neque mattis non. Curabitur malesuada a turpis at facilisis. Quisque pellentesque pretium porttitor. Proin in ante in risus sollicitudin consequat. In gravida mollis enim, a commodo quam suscipit vel. Donec eu turpis enim. Aliquam ac dapibus quam. Etiam congue facilisis augue, eget porta lectus feugiat nec. Donec sodales ex ut massa consectetur consequat. Aliquam non risus at mi cursus interdum in id massa. Praesent mauris diam, laoreet sit amet hendrerit non, scelerisque ac justo. Duis consectetur magna augue, sed bibendum est molestie id.
-						</p>
-						<p>
-							Quisque vulputate, ante id pulvinar efficitur, magna velit faucibus est, eu placerat dolor sapien vel nisl. Morbi placerat mi sed efficitur rhoncus. Aenean ornare risus lacus, nec sodales nulla molestie ac. Morbi efficitur ullamcorper purus, id tempor lectus sollicitudin eget. Aenean sollicitudin dui eu scelerisque mattis. Proin sagittis augue sit amet luctus ornare. Nullam augue nisi, auctor sed pellentesque vel, scelerisque tincidunt urna. Aenean quis libero convallis, aliquet est id, aliquet libero. Donec congue velit ligula, nec porta magna blandit vel. Donec molestie elit at nisl bibendum, et finibus libero lobortis. Sed fermentum justo lacus, eu posuere sapien porta et. Pellentesque vel massa ac lorem ornare congue. Suspendisse quis laoreet neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						</p>
-						<input id="5" class="btn btn-default btn-info leer_mas" value="Leer +">
-					</div>
-				</div>
 
 				</div>
 
-			</div>
+	        <div id="btn_cargar_mas" class="container-fluid">
+	        	<div class="row">
+	        		<button id="cargar_mas" type="button" class=" col-lg-offset-5 btn btn-default btn-info col-lg-2">
+	        		<span class="glyphicon glyphicon-refresh"></span> Cargar más</button>
+	            </div>
+	        </div>
+		</section>
 
-		</div>
-        <section id="btn_cargar_mas" class="container-fluid">
-        		<div class="row">
-        		<button id="cargar_mas" type="button" class=" col-lg-offset-3 btn btn-default btn-info col-lg-6">Cargar más</button>
-            	</div>
-        </section>
-	</section>
-
+	</div>
 	<footer class="container-fluid">
 		<div class="row">
 			<div class="container">
@@ -456,7 +459,6 @@
 		</div>
 
 	</footer>
-
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
