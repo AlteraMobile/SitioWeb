@@ -37,11 +37,10 @@ jQuery(document).ready(function($) {
 	$( ".btn_mod_actor" ).click( function(){
 		$( "#form_mod_pelicula" ).dialog({
 		    height: 630,
-		    width: 950,
+		    width: 1200,
       		modal: true,
       		resizable: true,
-      		closeOnEscape: true,
-
+      		closeOnEscape: true
       	});
 	});
 
