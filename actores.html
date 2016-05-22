@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/datatables.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.css">
+
+	<title>Actores </title>
+</head>
+<body>
+	<div id="contenido">
+		<header class="container">
+			<div class="row">
+
+				<nav class="navbar navbar-default ">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+	      				</button>
+			    	
+			      		<a class="navbar-brand" href="#">{ PeliCritix } <small>Administrador</small></a>
+			    	</div>
+			    	<div class="collapse navbar-collapse" id="menu">
+				    	<ul class="nav navbar-nav">
+
+				      		<li><a href="dashboard.html">
+				      			<span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+				      		<li class="dropdown">
+				      			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				      				<span class="glyphicon glyphicon-film"></span> Cinamatrografía
+				      				<span class="caret"></span>
+			      				</a>
+			      				<ul class="dropdown-menu">
+			      					<li><a href="add_pelicula.html">Agregar película</a></li>
+			      					<li><a href="mod_pelicula.html">Modificar/Eliminar película</a></li>
+			      				</ul>
+							</li>
+
+				      		<li  class="active">
+								<a href="actores.html">
+					      			<span class="glyphicon glyphicon-star-empty"></span> Actores
+					      		</a>
+					      	</li>
+					      		
+					      	<li>
+								<a href="directores.html">
+					      			<span class="glyphicon glyphicon-bullhorn"></span> Directores
+					      		</a>
+					      	</li>
+					      	<li>
+								<a href="sliders.html">
+					      			<span class="glyphicon glyphicon-picture"></span> Sliders
+					      		</a>
+					      	</li>
+				      	
+				    	</ul>
+				    	<ul class="nav navbar-nav navbar-right">
+					    	<li><a href="index.html">
+					    		<span class="glyphicon glyphicon-log-out"></span> Cerrar</a></li>
+					    </ul>
+					</div>
+			 	</div>
+			</nav>
+
+
+				<h1 class="col-lg-12">{ Actores }</h1>
+
+			</div>
+		</header>
+
+		<section class="container">
+
+			<div class="row">
+				<div class="col-lg-1 col-lg-offset-11">
+					<button id="btn_nuevo" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span> Nuevo</button>
+				</div>
+			</div>
+
+			<div class="espacio"></div>
+
+			<div class="row">
+				<table id="actores" name="actor" class="display" cellspacing="0" width="100%" >
+					<thead>
+						<tr>
+							<td>Id</td>
+							<td>Nombres</td>
+							<td>Apellidos</td>
+							<td>Acciones</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Juan</td>
+							<td>Perez</td>
+							<td>
+								<button id="1" class="btn btn-default btn-xs btn_mod_actor"><span class="glyphicon glyphicon-pencil"></span> </button> 
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove "></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Maria</td>
+							<td>Fernanez</td>
+							<td>
+								<button id="2" class="btn btn-default btn-xs btn_mod_actor"><span class="glyphicon glyphicon-pencil"></span> </button> 
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove "></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Juan</td>
+							<td>Perez</td>
+							<td>
+								<button id="3" class="btn btn-default btn-xs btn_mod_actor"><span class="glyphicon glyphicon-pencil"></span> </button> 
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove "></span></button>
+							</td>
+
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Maria</td>
+							<td>Fernanez</td>
+							<td>
+								<button id="4" class="btn btn-default btn-xs btn_mod_actor"><span class="glyphicon glyphicon-pencil"></span> </button> 
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove "></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Juan</td>
+							<td>Perez</td>
+							<td>
+								<button id="5" class="btn btn-default btn-xs btn_mod_actor"><span class="glyphicon glyphicon-pencil"></span> </button> 
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove "></span></button>
+							</td>
+
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>Maria</td>
+							<td>Fernanez</td>
+							<td>
+								<button id="6" class="btn btn-default btn-xs btn_mod_actor"><span class="glyphicon glyphicon-pencil"></span> </button> 
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove "></span></button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+
+			<div class="espacio"></div>
+
+			<div id="form_nuevo" title="Nuevo Actor">
+				<form role="form" class="form-horizontal" name="actor" onsubmit="return validarFormActor()" >
+					<div class="form-group">
+						<label for="nombres" class="col-lg-2 col-lg-offset-1 control-label">*Nombres:</label>
+						<div class="col-lg-7">
+							<input type="text" class="form-control" name="nombres" placeholfer="Nombres">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="apellidos" class="col-lg-2 col-lg-offset-1 control-label">*Apellidos:</label>
+						<div class="col-lg-7">
+							<input type="text" class="form-control" name="apellidos" placeholfer="Apellidos">
+						</div>
+					</div>
+					 <div class="form-group">
+	    				<div class="col-lg-6 col-lg-offset-3">
+	      					 <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-ok"></span> Crear</button>
+	    				</div>
+				</form>
+			</div>
+
+			<div id="form_modificar" title="Modificar Actor">
+ 
+  				<form role="form" class="form-horizontal" name="actor_mod" onsubmit="return validarFormActor()" >
+					<input type="hidden" name="id">
+					<div class="form-group">
+						<label for="nombres" class="col-lg-2 col-lg-offset-1 control-label">*Nombres:</label>
+						<div class="col-lg-7">
+							<input type="text" class="form-control" name="nombres" placeholfer="Nombres">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="apellidos" class="col-lg-2 col-lg-offset-1 control-label">*Apellidos:</label>
+						<div class="col-lg-7">
+							<input type="text" class="form-control" name="apellidos" placeholfer="Apellidos">
+						</div>
+					</div>
+					 <div class="form-group">
+	    				<div class="col-lg-6 col-lg-offset-3">
+	      					 <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span> Modificar</button>
+	    				</div>
+				</form>
+			</div>
+
+
+
+		</section>
+	</div>
+	<footer>
+		footer
+	</footer>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/datatables.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<script type="text/javascript">
+		 $("#actores").DataTable();
+
+		 // Validar formulario Actor
+		function validarFormActor() {
+		    var nombres = document.forms["actor"]["nombres"].value;
+		    var apellidos = document.forms["actor"]["apellidos"].value;
+		  
+		    if (nombres == null || nombres == "") {
+		        alert("Debe ingresar nombres.");
+		        return false;
+		    }
+		    if (apellidos == null || apellidos == ""){
+		    	alert("Debe ingresar apellidos.");
+		    	return false;
+		    }
+		}
+
+		function validarFormActor() {
+		    var nombres = document.forms["actor_mod"]["nombres"].value;
+		    var apellidos = document.forms["actor_mod"]["apellidos"].value;
+		  
+		    if (nombres == null || nombres == "") {
+		        alert("Debe ingresar nombres.");
+		        return false;
+		    }
+		    if (apellidos == null || apellidos == ""){
+		    	alert("Debe ingresar apellidos.");
+		    	return false;
+		    }
+		}
+
+		
+		
+	</script>
+</body>
+</html>
