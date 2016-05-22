@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background-color"
+			],
+			[
+				"border-",
+				"border-width"
+			],
+			[
+				"border-s",
+				"border-style"
+			],
+			[
+				"td",
+				"tbody	Tag"
+			],
+			[
 				"wid",
 				"width"
 			],
@@ -121,15 +137,23 @@
 	"expanded_folders":
 	[
 		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb",
-		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/css",
-		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/img",
-		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/img/cover",
 		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/js"
 	],
 	"file_history":
 	[
-		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/js/script.js",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/index.html",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/login.html",
 		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/css/style.css",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/js/script.js",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/mod_pelicula.html",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/mod_slider.html",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/sliders.html",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/actores.html",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/add_pelicula.html",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/directores.html",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/dashboard.html",
+		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/del_pelicula.html",
+		"/C/Users/Katherine Nussbaum/Downloads/kartik-v-bootstrap-star-rating-v4.0.1-8-g3d0ac4b/kartik-v-bootstrap-star-rating-3d0ac4b/css/theme-krajee-svg.css",
 		"/c/xampp/php/logs/php_error_log",
 		"/C/xampp/apache/logs/access.log",
 		"/C/xampp/apache/logs/error.log",
@@ -137,7 +161,6 @@
 		"/C/xampp/phpMyAdmin/config.inc.php",
 		"/C/xampp/mysql/bin/my.ini",
 		"/C/xampp/apache/conf/extra/httpd-ssl.conf",
-		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/index.html",
 		"/C/xampp/apache/conf/httpd.conf",
 		"/C/xampp/apache/conf/extra/httpd-xampp.conf",
 		"/D/SantoTomas/Semestre 3/Web/ProyectoSitioWeb/SitioWeb/src/css/variables.less",
@@ -190,6 +213,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\">\n",
 			"exec",
 			"time",
 			"3306",
@@ -300,7 +324,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 146.0,
+	"side_bar_width": 273.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
