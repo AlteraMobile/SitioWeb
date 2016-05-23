@@ -89,7 +89,7 @@
 					<input type="text" class="form-control input-sm" id="titulo" name="titulo" placeholder="Título">
 				</div>
 				<div class="form-group col-lg-4 col-sm-6">
-					<label for="subtitulo">Subtítulo*</label>
+					<label for="subtitulo">Subtítulo</label>
 					<input type="text" class="form-control input-sm" id="subtitulo" name="subtitulo" placeholder="Subtítulo">
 				</div>
 				<div class="form-group col-lg-2 col-sm-4">
@@ -116,7 +116,7 @@
 					<select class="form-control input-sm" id="genero" name="genero">
 						<option>Película</option>
 				        <option>Documental</option>
-				        <option>Cortmetraje</option>
+				        <option>Cortometraje</option>
       				</select>
 				</div>
 				<div class="form-group col-lg-2 col-sm-4">
@@ -202,7 +202,6 @@
 		// Validar formulario Login
 		function validarFormAddPelicula() {
 		    var titulo = document.forms["pelicula"]["titulo"].value;
-		    var subtitulo = document.forms["pelicula"]["subtitulo"].value;
 		    var categoria = document.forms["pelicula"]["categoria"].value;
 		    var critica = document.forms["pelicula"]["critica"].value;
 
@@ -212,10 +211,7 @@
 		        alert("Debe ingresar un titulo.");
 		        return false;
 		    }
-		    if (subtitulo == null || subtitulo ==""){
-		    	alert("Debe ingresar un subtitulo.");
-		    	return false;
-		    }
+		    
 		    if (categoria == null || categoria ==""){
 		    	alert("Debe ingresar al menos una categoría.");
 		    	return false;
