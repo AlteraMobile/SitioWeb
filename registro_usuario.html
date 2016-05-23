@@ -10,8 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/unslider.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/unslider-dots.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.css">
 
-	<title>PeliCritix || Dashboard</title>
+	<title>Registro de Usuario || Agregar</title>
 </head>
 <body>
 	<div id="contenido">
@@ -32,7 +34,7 @@
 			    	<div class="collapse navbar-collapse" id="menu">
 				    	<ul class="nav navbar-nav">
 
-				      		<li class="active"><a href="#">
+				      		<li><a href="dashboard.html">
 				      			<span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
 				      		<li class="dropdown">
 				      			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -61,11 +63,12 @@
 					      			<span class="glyphicon glyphicon-picture"></span> Sliders
 					      		</a>
 					      	</li>
-				      		<li>					      	
+					      	<li class = "active">					      	
 								<a href="registro_usuario.html">
 					      			<span class="glyphicon glyphicon-user"></span> Registro Usuario
 					      		</a>
 					      	</li>
+				      	
 				    	</ul>
 				    	<ul class="nav navbar-nav navbar-right">
 					    	<li><a href="index.html">
@@ -75,19 +78,44 @@
 			 	</div>
 			</nav>
 
-			<h1 class="col-lg-12">{ Dashboard }</h1>
+
+			<h1 class="col-lg-12">{ Registro Usuario} <small>Agregar</small></h1>
 
 		</div>
 	</header>
-	
+
 
 	<section class="container">
 		<div class="row">
-			
+
+			<form role="form" name="usuario" onsubmit="return validarFormAddUsuario()">
+				<div class="form-group col-lg-4 col-sm-6">
+					<label for="titulo">Nombres*</label>
+					<input type="text" class="form-control input-sm" id="nombres" name="nombres" placeholder="Nombres">
+				</div>
+				<div class="form-group col-lg-4 col-sm-6">
+					<label for="subtitulo">Apellidos*</label>
+					<input type="text" class="form-control input-sm" id="apellidos" name="apellidos" placeholder="Apellidos">
+				</div>
+				<div class="form-group col-lg-2 col-sm-4">
+					<label for="estreno">Fecha de Nacimiento*</label>
+					<input type="date" class="form-control input-sm" id="fecha" name="fecha" placeholder="Fecha de Nacimiento">
+				</div>
+				<div class="form-group col-lg-2 col-sm-4">
+					<label for="produccion">Nombre de Usuario*</label><input type="text" class="form-control input-sm" id="nom_usu" name="nom_usu" placeholder="Nombre de Usuario">
+				</div>
+				<div class="form-group col-lg-6 col-sm-6">
+				  <label>Contraseña*</label>
+					<input type="password" class="form-control input-sm" id="pass" name="pass" placeholder="Contraseña">
+				</div>
+				<div class="clearfix visible-lg"></div>
+				<button type="submit" class="btn btn-default col-xs-4 col-xs-offset-4 btn-info ">
+					<span class="glyphicon glyphicon-ok"></span> Agregar</button>
+
+			</form>
 			
 		</div>
 	</section>
-	
 	</div>
 	<footer class="container-fluid">
 		<div class="row">
@@ -105,6 +133,42 @@
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="src/js/unslider.js"></script>
 	<script type="text/javascript" src="js/masonry.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript">
+		// Validar formulario Login
+		function validarFormAddUsuario() {
+		    var nombres = document.forms["usuario"]["nombres"].value;
+		    var apellidos = document.forms["usuario"]["apellidos"].value;
+		    var fecha = document.forms["usuario"]["fecha"].value;
+		    var nom_usu = document.forms["usuario"]["nom_usu"].value;
+		    var pass = document.forms["usuario"]["pass"].value;
+		    
 
+
+		    if (nombres == null || nombres == "") {
+		        alert("Debe ingresar Nombres.");
+		        return false;
+		    }
+		    
+		    if (apellidos == null || apellidos ==""){
+		    	alert("Debe ingresar Apellidos.");
+		    	return false;
+		    }
+		    if (fecha == null || fecha ==""){
+		    	alert("Debe ingresar una Fecha.");
+		    	return false;
+		    }
+
+		   if (nom_usu == null || nom_usu ==""){
+		    	alert("Debe ingresar un Nombre de Usuario.");
+		    	return false;
+		    }
+		    if (pass == null || pass ==""){
+		    	alert("Debe ingresar una Contraseña.");
+		    	return false;
+		    }
+
+		}
+	</script>
 </body>
 </html>
