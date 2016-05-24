@@ -88,6 +88,7 @@
 		<div class="row">
 
 			<form role="form" name="pelicula" onsubmit="return validarFormAddPelicula()">
+				
 				<div class="form-group col-lg-4 col-sm-6">
 					<label for="titulo">Título*</label>
 					<input type="text" class="form-control input-sm" id="titulo" name="titulo" placeholder="Título">
@@ -172,10 +173,14 @@
 				    </select>
 				</div>
 
-				<div class="form-group col-sm-12">
+				<div class="form-group col-sm-10">
   					<label for="critica">Crítica*</label>
 				  	<textarea class="form-control input-sm" rows="5" id="critica" name="critica"></textarea>
 				</div>
+				<div class="form-group col-sm-2">
+	  					<label for="nota">Nota*</label>
+					  	<input type="number" step="0.1" min="0" max="10" class="form-control input-sm" rows="5" id="nota" name="nota" placeholder="0-10">
+					</div>
 				 <div class="clearfix visible-lg"></div>
 				<button type="submit" class="btn btn-default col-xs-4 col-xs-offset-4 btn-info ">
 					<span class="glyphicon glyphicon-ok"></span> Agregar</button>
@@ -205,10 +210,10 @@
 	<script type="text/javascript">
 		// Validar formulario Login
 		function validarFormAddPelicula() {
-		    var titulo = document.forms["pelicula"]["titulo"].value;
-		    var categoria = document.forms["pelicula"]["categoria"].value;
-		    var critica = document.forms["pelicula"]["critica"].value;
-
+		    var titulo = document.forms["pelicula"]["titulo"].value.trim();
+		    var categoria = document.forms["pelicula"]["categoria"].value.trim();
+		    var critica = document.forms["pelicula"]["critica"].value.trim();
+		    var nota = document.forms["pelicula"]["nota"].value;
 
 
 		    if (titulo == null || titulo == "") {
@@ -216,16 +221,23 @@
 		        return false;
 		    }
 		    
-		    if (categoria == null || categoria ==""){
+		    else if (categoria == null || categoria ==""){
 		    	alert("Debe ingresar al menos una categoría.");
 		    	return false;
 		    }
-		    if (critica == null || critica ==""){
+		    else if (critica == null || critica ==""){
 		    	alert("Debe ingresar una crítica");
 		    	return false;
 		    }
+		    else if(nota == null || nota == ""){
+		    	alert("Debe ingresar una nota.");
+		    	return false;
+		    }
+		    else{
+		    	return true;
+		    }
+		};
 
-		}
 	</script>
 </body>
 </html>

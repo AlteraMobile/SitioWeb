@@ -56,13 +56,21 @@ h1{
 	font-weight: 700;
 	color: #2BACD2;
 	font-size:30px;
-	line-height: 38px;
+	line-height: 70px;
 }
 h3{
+	font-family: 'Raleway', sans-serif;
 	color: #999;
 	font-size:22px;
 	font-weight:300;
 }
+h4{
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	font-size:22px;
+	font-weight:600;
+}
+
 
 /*
 ==============================================================
@@ -96,7 +104,6 @@ h3{
 #slider{
 	margin-top: 25px;
 	height: 450px;
-	background-color: #666;
 	display: block;
 }
 .my-slider{
@@ -136,19 +143,25 @@ h3{
 ==================================================== Contenido
 ==============================================================
 */
+.inicio{
+	margin-bottom: 25px;
+	display: block;
+}
 #cont_contenido{
 	margin-top: 25px;
 }
 #filtros{
 	background-color: #666;
 	color: #FFF;
-	padding: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
 	text-align: center;
 }
 #filtros button{
 	width: 25px;
 	margin-right: 1px;
 	margin-left: 1px;
+	margin-bottom: 5px;
 }
 .grid-item {
     box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.05), 0 6px 6px 0 rgba(0, 0, 0, 0.15);
@@ -249,7 +262,7 @@ h3{
 ================================================== Forms Admin
 ==============================================================
 */
-#form_nuevo, #form_modificar, #form_mod_pelicula, #form_slider, #form_mod_slider{display: none;}
+#form_nuevo, #form_modificar, #form_mod_pelicula, #form_slider, #form_mod_slider, #form_mod_usuario{display: none;}
 
 
 /*
@@ -264,4 +277,68 @@ footer{
 	padding-top: 25px;
 	padding-bottom: 25px;
 	background: linear-gradient(#5BC0DE, #28A4C8);
+}
+@media only screen and (max-width: 1225px) {
+    #slider{
+		height: 411px;
+	}
+	.unslider-arrow {
+    	margin-top: -270px;
+	}
+}
+
+@media only screen and (max-width: 1065px) {
+    #slider{
+		height: 358px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+    #slider{
+		height: 302px;
+	}
+	.unslider-arrow {
+    	margin-top: -325px;
+	}
+}
+
+@media only screen and (max-width: 756px) {
+    h1{
+    	font-size: 35px;
+    	line-height: 40px;
+    }
+    #slider{
+		height: 254px;
+	}
+}
+
+@media only screen and (max-width: 598px) {
+    #slider{
+		height: 200px;
+	}
+	.unslider-arrow {
+    	margin-top: -370px;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	h1{
+		font-size: 20px;
+		line-height: 25px;
+	}
+    #slider{
+		height: 138px;
+	}
+	.unslider-arrow {
+    	margin-top: -400px;
+	}
+}
+
+@media only screen and (max-width: 290px) {
+    #slider{
+		height: 96px;
+	}
+	.unslider-arrow {
+    	margin-top: -422px;
+	}
 }

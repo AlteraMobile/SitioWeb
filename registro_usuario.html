@@ -7,13 +7,14 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/datatables.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/unslider.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/unslider-dots.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<title>Registro de Usuario || Agregar</title>
+	<title>Registro de Usuario</title>
 </head>
 <body>
 	<div id="contenido">
@@ -79,7 +80,7 @@
 			</nav>
 
 
-			<h1 class="col-lg-12">{ Registro Usuario} <small>Agregar</small></h1>
+			<h1 class="col-lg-12">{ Registro Usuario }</h1>
 
 		</div>
 	</header>
@@ -87,32 +88,212 @@
 
 	<section class="container">
 		<div class="row">
+			<div id="form_usuario">
+				<h2>Nuevo Usuario</h2>
+				<form role="form" name="usuario" onsubmit="return validarFormAddUsuario()">
+					<div class="form-group col-lg-5 col-sm-4">
+						<label for="titulo">Nombres*</label>
+						<input type="text" class="form-control input-sm" id="nombres" name="nombres" placeholder="Nombres">
+					</div>
+					<div class="form-group col-lg-5 col-sm-4">
+						<label for="subtitulo">Apellidos*</label>
+						<input type="text" class="form-control input-sm" id="apellidos" name="apellidos" placeholder="Apellidos">
+					</div>
+					<div class="form-group col-lg-2 col-sm-4">
+						<label for="estreno">Fecha de Nacimiento*</label>
+						<input type="date" class="form-control input-sm" id="fecha" name="fecha" placeholder="Fecha de Nacimiento">
+					</div>
+					<div class="form-group col-lg-4 col-sm-4">
+						<label for="produccion">Nombre de Usuario*</label><input type="text" class="form-control input-sm" id="nom_usu" name="nom_usu" placeholder="Nombre de Usuario">
+					</div>
+					<div class="form-group col-lg-4 col-sm-4">
+					  <label>Contraseña*</label>
+						<input type="password" class="form-control input-sm" id="pass" name="pass" placeholder="Contraseña">
+					</div>
+					<div class="form-group col-lg-4 col-sm-4">
+					  <label>Repetir Contraseña*</label>
+						<input type="password" class="form-control input-sm" id="pass2" name="pass2" placeholder="Repetir Contraseña">
+					</div>
+					<div class="clearfix visible-lg"></div>
+					<button type="submit" class="btn btn-default col-sm-2 col-sm-offset-5 col-xs-4 col-xs-offset-4 btn-info ">
+						<span class="glyphicon glyphicon-ok"></span> Agregar</button>
 
-			<form role="form" name="usuario" onsubmit="return validarFormAddUsuario()">
-				<div class="form-group col-lg-4 col-sm-6">
-					<label for="titulo">Nombres*</label>
-					<input type="text" class="form-control input-sm" id="nombres" name="nombres" placeholder="Nombres">
-				</div>
-				<div class="form-group col-lg-4 col-sm-6">
-					<label for="subtitulo">Apellidos*</label>
-					<input type="text" class="form-control input-sm" id="apellidos" name="apellidos" placeholder="Apellidos">
-				</div>
-				<div class="form-group col-lg-2 col-sm-4">
-					<label for="estreno">Fecha de Nacimiento*</label>
-					<input type="date" class="form-control input-sm" id="fecha" name="fecha" placeholder="Fecha de Nacimiento">
-				</div>
-				<div class="form-group col-lg-2 col-sm-4">
-					<label for="produccion">Nombre de Usuario*</label><input type="text" class="form-control input-sm" id="nom_usu" name="nom_usu" placeholder="Nombre de Usuario">
-				</div>
-				<div class="form-group col-lg-6 col-sm-6">
-				  <label>Contraseña*</label>
-					<input type="password" class="form-control input-sm" id="pass" name="pass" placeholder="Contraseña">
-				</div>
-				<div class="clearfix visible-lg"></div>
-				<button type="submit" class="btn btn-default col-xs-4 col-xs-offset-4 btn-info ">
-					<span class="glyphicon glyphicon-ok"></span> Agregar</button>
+				</form>
+			</div>
+		</div>
+		<div class="espacio"></div>
+		<div class="row">
+			<div id="registro_usuario">
+				<table id="tbl_usuarios" name="tbl_usuarios" class="display" cellspacing="0" width="100%">
+					<thead>
+						<tr>
+							<td>Nombres</td>
+							<td>Apellidos</td>
+							<td>Fecha Nacimiento</td>
+							<td>Nombre Usuario</td>
+							<td>Acciones</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Katherine Andrea</td>
+							<td>Nussbaum Niccoli</td>
+							<td>04/03/1979</td>
+							<td>kty</td>
+							<td>
+								<button class="btn btn-default btn-xs modificar_usuario"><span class="glyphicon glyphicon-pencil "></span></button>
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>Rodrigo</td>
+							<td>Vergara A.</td>
+							<td>01/08/1983</td>
+							<td>roro</td>
+							<td>
+								<button class="btn btn-default btn-xs modificar_usuario"><span class="glyphicon glyphicon-pencil"></span></button>
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>Juan Cristobal</td>
+							<td>Sanchez</td>
+							<td>24/12/1972</td>
+							<td>lolo</td>
+							<td>
+								<button class="btn btn-default btn-xs modificar_usuario"><span class="glyphicon glyphicon-pencil "></span></button>
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>Katherine Andrea</td>
+							<td>Nussbaum Niccoli</td>
+							<td>04/03/1979</td>
+							<td>kty</td>
+							<td>
+								<button class="btn btn-default btn-xs modificar_usuario"><span class="glyphicon glyphicon-pencil "></span></button>
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>Rodrigo</td>
+							<td>Vergara A.</td>
+							<td>01/08/1983</td>
+							<td>roro</td>
+							<td>
+								<button class="btn btn-default btn-xs modificar_usuario"><span class="glyphicon glyphicon-pencil "></span></button>
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>Juan Cristobal</td>
+							<td>Sanchez</td>
+							<td>24/12/1972</td>
+							<td>lolo</td>
+							<td>
+								<button class="btn btn-default btn-xs modificar_usuario"><span class="glyphicon glyphicon-pencil "></span></button>
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>Katherine Andrea</td>
+							<td>Nussbaum Niccoli</td>
+							<td>04/03/1979</td>
+							<td>kty</td>
+							<td>
+								<button class="btn btn-default btn-xs modificar_usuario"><span class="glyphicon glyphicon-pencil "></span></button>
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>Rodrigo</td>
+							<td>Vergara A.</td>
+							<td>01/08/1983</td>
+							<td>roro</td>
+							<td>
+								<button class="btn btn-default btn-xs modificar_usuario"><span class="glyphicon glyphicon-pencil "></span></button>
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>Juan Cristobal</td>
+							<td>Sanchez</td>
+							<td>24/12/1972</td>
+							<td>lolo</td>
+							<td>
+								<button class="btn btn-default btn-xs modificar_usuario"><span class="glyphicon glyphicon-pencil "></span></button>
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>Katherine Andrea</td>
+							<td>Nussbaum Niccoli</td>
+							<td>04/03/1979</td>
+							<td>kty</td>
+							<td>
+								<button class="btn btn-default btn-xs modificar_usuario"><span class="glyphicon glyphicon-pencil "></span></button>
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>Rodrigo</td>
+							<td>Vergara A.</td>
+							<td>01/08/1983</td>
+							<td>roro</td>
+							<td>
+								<button class="btn btn-default btn-xs modificar_usuario"><span class="glyphicon glyphicon-pencil "></span></button>
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>Juan Cristobal</td>
+							<td>Sanchez</td>
+							<td>24/12/1972</td>
+							<td>lolo</td>
+							<td>
+								<button class="btn btn-default btn-xs modificar_usuario"><span class="glyphicon glyphicon-pencil "></span></button>
+								<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+							</td>
+						</tr>
+					</tbody>	
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			
+			<div id="form_mod_usuario" title="Modificar Usuario">
 
-			</form>
+				<form role="form" name="mod_usuario" onsubmit="return validarFormModUsuario()">
+					<input type="hidden" name="id" value="id">
+					<div class="form-group col-lg-6 col-sm-6">
+						<label for="titulo">Nombres*</label>
+						<input type="text" class="form-control input-sm" id="nombres" name="nombres" placeholder="Nombres">
+					</div>
+					<div class="form-group col-lg-6 col-sm-6">
+						<label for="subtitulo">Apellidos*</label>
+						<input type="text" class="form-control input-sm" id="apellidos" name="apellidos" placeholder="Apellidos">
+					</div>
+					<div class="form-group col-lg-6 col-sm-6">
+						<label for="estreno">Fecha de Nacimiento*</label>
+						<input type="date" class="form-control input-sm" id="fecha" name="fecha" placeholder="Fecha de Nacimiento">
+					</div>
+					<div class="form-group col-lg-6 col-sm-6">
+						<label for="produccion">Nombre de Usuario*</label><input type="text" class="form-control input-sm" id="nom_usu" name="nom_usu" placeholder="Nombre de Usuario">
+					</div>
+					<div class="form-group col-lg-6 col-sm-6">
+					  <label>Contraseña*</label>
+						<input type="password" class="form-control input-sm" id="pass" name="pass" placeholder="Contraseña">
+					</div>
+					<div class="form-group col-lg-6 col-sm-6">
+					  <label>Repetir Contraseña*</label>
+						<input type="password" class="form-control input-sm" id="pass2" name="pass2" placeholder="Repetir Contraseña">
+					</div>
+					<div class="clearfix visible-lg"></div>
+					<button type="submit" class="btn btn-default col-xs-4 col-xs-offset-4 btn-info ">
+						<span class="glyphicon glyphicon-ok"></span> Agregar</button>
+
+				</form>
+			</div>
 			
 		</div>
 	</section>
@@ -130,45 +311,132 @@
 	
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/datatables.js"></script>
 	<script type="text/javascript" src="src/js/unslider.js"></script>
 	<script type="text/javascript" src="js/masonry.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript">
+
+		$("#tbl_usuarios").DataTable();
 		// Validar formulario Login
 		function validarFormAddUsuario() {
-		    var nombres = document.forms["usuario"]["nombres"].value;
-		    var apellidos = document.forms["usuario"]["apellidos"].value;
-		    var fecha = document.forms["usuario"]["fecha"].value;
-		    var nom_usu = document.forms["usuario"]["nom_usu"].value;
-		    var pass = document.forms["usuario"]["pass"].value;
+		    var nombres = document.forms["usuario"]["nombres"].value.trim();
+		    var apellidos = document.forms["usuario"]["apellidos"].value.trim();
+		    var fecha = document.forms["usuario"]["fecha"].value.trim();
+		    var nom_usu = document.forms["usuario"]["nom_usu"].value.trim();
+		    var pass = document.forms["usuario"]["pass"].value.trim();
+		    var pass2 = document.forms["usuario"]["pass2"].value.trim();
 		    
-
-
 		    if (nombres == null || nombres == "") {
 		        alert("Debe ingresar Nombres.");
 		        return false;
 		    }
+		    else if(nombres.length < 3){
+		    	alert("Nombres: longitud mínima 3.");
+		    	return false;
+		    }
 		    
-		    if (apellidos == null || apellidos ==""){
+		    else if (apellidos == null || apellidos ==""){
 		    	alert("Debe ingresar Apellidos.");
 		    	return false;
 		    }
-		    if (fecha == null || fecha ==""){
+		    else if( apellidos.length < 3){
+		    	alert("Apellidos: longitud mínima 3.");
+		    	return false;
+		    }
+		    else if (fecha == null || fecha ==""){
 		    	alert("Debe ingresar una Fecha.");
 		    	return false;
 		    }
 
-		   if (nom_usu == null || nom_usu ==""){
+		   	else if (nom_usu == null || nom_usu ==""){
 		    	alert("Debe ingresar un Nombre de Usuario.");
 		    	return false;
 		    }
-		    if (pass == null || pass ==""){
+		    else if(nom_usu.length < 3){
+		    	alert("Usuario: longitud mínima 3.");
+		    	return false;
+		    }
+		    else if (pass == null || pass ==""){
 		    	alert("Debe ingresar una Contraseña.");
 		    	return false;
 		    }
+		    else if (pass2 == null || pass2 == "") {
+		    	alert("Debe repetir la contraseña.");
+		    	return false;
+		    }
+		    else if(pass !== pass2){
+		    	alert("Las contraseñas no coinciden. Deben ser iguales.");
+		    	return false;
+		    }
+		    else if(pass.length < 6){
+		    	alert("Contraseña: longitud mínima 6.");
+		    	return false;
+		    }
+		    else{
+		    	return true;
+		    }
+		};
+		function validarFormModUsuario() {
+		    var nombres = document.forms["mod_usuario"]["nombres"].value.trim();
+		    var apellidos = document.forms["mod_usuario"]["apellidos"].value.trim();
+		    var fecha = document.forms["mod_usuario"]["fecha"].value.trim();
+		    var nom_usu = document.forms["mod_usuario"]["nom_usu"].value.trim();
+		    var pass = document.forms["mod_usuario"]["pass"].value.trim();
+		    var pass2 = document.forms["mod_usuario"]["pass2"].value.trim();
+		    
+		    if (nombres == null || nombres == "") {
+		        alert("Debe ingresar Nombres.");
+		        return false;
+		    }
+		    else if(nombres.length < 3){
+		    	alert("Nombres: longitud mínima 3.");
+		    	return false;
+		    }
+		    
+		    else if (apellidos == null || apellidos ==""){
+		    	alert("Debe ingresar Apellidos.");
+		    	return false;
+		    }
+		    else if( apellidos.length < 3){
+		    	alert("Apellidos: longitud mínima 3.");
+		    	return false;
+		    }
+		    else if (fecha == null || fecha ==""){
+		    	alert("Debe ingresar una Fecha.");
+		    	return false;
+		    }
 
-		}
+		   	else if (nom_usu == null || nom_usu ==""){
+		    	alert("Debe ingresar un Nombre de Usuario.");
+		    	return false;
+		    }
+		    else if(nom_usu.length < 3){
+		    	alert("Usuario: longitud mínima 3.");
+		    	return false;
+		    }
+		    else if (pass == null || pass ==""){
+		    	alert("Debe ingresar una Contraseña.");
+		    	return false;
+		    }
+		    else if (pass2 == null || pass2 == "") {
+		    	alert("Debe repetir la contraseña.");
+		    	return false;
+		    }
+		    else if(pass !== pass2){
+		    	alert("Las contraseñas no coinciden. Deben ser iguales.");
+		    	return false;
+		    }
+		    else if(pass.length < 6){
+		    	alert("Contraseña: longitud mínima 6.");
+		    	return false;
+		    }
+		    else{
+		    	return true;
+		    }
+		};
+
 	</script>
 </body>
 </html>

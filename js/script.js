@@ -1,8 +1,20 @@
 jQuery(document).ready(function($) {
 
 	//alert("ok");
+
+	$( ".modificar_usuario" ).click( function(){
+		$( "#form_mod_usuario" ).dialog({
+		    height: 300,
+		    width: 530,
+      		modal: true,
+      		resizable: true,
+      		closeOnEscape: true,
+      		
+      	});
+	});
+	
 	$( "#btn_nuevo" ).click( function(){
-		$( "#form_nuevo" ).dialog({
+		$( "#form_mod_usuario" ).dialog({
 		    height: 250,
 		    width: 530,
       		modal: true,
@@ -34,7 +46,7 @@ jQuery(document).ready(function($) {
       	});
 	});
 
-	$( ".btn_mod_actor" ).click( function(){
+	$( ".btn_mod_pelicula" ).click( function(){
 		$( "#form_mod_pelicula" ).dialog({
 		    height: 630,
 		    width: 1200,
@@ -99,7 +111,7 @@ jQuery(document).ready(function($) {
   		} );
 	});
 
-
+	
 	
 		
 

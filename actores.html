@@ -237,35 +237,55 @@
 
 		 // Validar formulario Actor
 		function validarFormActor() {
-		    var nombres = document.forms["actor"]["nombres"].value;
-		    var apellidos = document.forms["actor"]["apellidos"].value;
+		    var nombres = document.forms["actor"]["nombres"].value.trim();
+		    var apellidos = document.forms["actor"]["apellidos"].value.trim();
 		  
 		    if (nombres == null || nombres == "") {
 		        alert("Debe ingresar nombres.");
 		        return false;
 		    }
-		    if (apellidos == null || apellidos == ""){
+		    else if(nombres.length < 3){
+		    	alert("Nombres: debe tener un largo mayor a 3.");
+		    	return false;
+		    }
+		    else if (apellidos == null || apellidos == ""){
 		    	alert("Debe ingresar apellidos.");
 		    	return false;
 		    }
-		}
+		    else if(apellidos.length < 3){
+		    	alert("Apellidos: debe tener un largo mayor a 3.");
+		    	return false;
+		    }
+		    else{
+		    	return true;
+		    }
+		};
 
 		function validarFormActorMod() {
-		    var nombres = document.forms["actor_mod"]["nombres"].value;
-		    var apellidos = document.forms["actor_mod"]["apellidos"].value;
+		    var nombres = document.forms["actor_mod"]["nombres"].value.trim();
+		    var apellidos = document.forms["actor_mod"]["apellidos"].value.trim();
 		  
 		    if (nombres == null || nombres == "") {
 		        alert("Debe ingresar nombres.");
 		        return false;
 		    }
-		    if (apellidos == null || apellidos == ""){
+		    else if(nombres.length < 3){
+		    	alert("Nombres: debe tener un largo mayor a 3.");
+		    	return false;
+		    }
+		    else if (apellidos == null || apellidos == ""){
 		    	alert("Debe ingresar apellidos.");
 		    	return false;
 		    }
-		}
+		    else if(apellidos.length < 3){
+		    	alert("Apellidos: debe tener un largo mayor a 3.");
+		    	return false;
+		    }
+		    else{
+		    	return true;
+		    }
+		};
 
-		
-		
 	</script>
 </body>
 </html>

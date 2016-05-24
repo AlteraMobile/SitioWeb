@@ -236,32 +236,54 @@
 
 		 // Validar formulario Login
 		function validarFormDirector() {
-		    var nombres = document.forms["director"]["nombres"].value;
-		    var apellidos = document.forms["director"]["apellidos"].value;
+		    var nombres = document.forms["director"]["nombres"].value.trim();
+		    var apellidos = document.forms["director"]["apellidos"].value.trim();
 		  
 		    if (nombres == null || nombres == "") {
 		        alert("Debe ingresar nombres.");
 		        return false;
 		    }
-		    if (apellidos == null || apellidos == ""){
+		    else if ( nombres.length <3 ){
+		    	alert("Nombres: longitud mínima 3.");
+		    	return false;
+		    }
+		    else if (apellidos == null || apellidos == ""){
 		    	alert("Debe ingresar apellidos.");
 		    	return false;
 		    }
-		}
+		    else if(apellidos.length < 3){
+		    	alert("Apellidos: longitud mínima 3.");
+		    	return false;
+		    }
+		    else{
+		    	return true;
+		    }
+		};
 
 		function validarFormDirectorMod() {
-		    var nombres = document.forms["director_mod"]["nombres"].value;
-		    var apellidos = document.forms["director_mod"]["apellidos"].value;
+		    var nombres = document.forms["director_mod"]["nombres"].value.trim();
+		    var apellidos = document.forms["director_mod"]["apellidos"].value.trim();
 		  
-		    if (nombres == null || nombres == "") {
+		   if (nombres == null || nombres == "") {
 		        alert("Debe ingresar nombres.");
 		        return false;
 		    }
-		    if (apellidos == null || apellidos == ""){
+		    else if ( nombres.length <3 ){
+		    	alert("Nombres: longitud mínima 3.");
+		    	return false;
+		    }
+		    else if (apellidos == null || apellidos == ""){
 		    	alert("Debe ingresar apellidos.");
 		    	return false;
 		    }
-		}
+		    else if(apellidos.length < 3){
+		    	alert("Apellidos: longitud mínima 3.");
+		    	return false;
+		    }
+		    else{
+		    	return true;
+		    }
+		};
 
 		
 		
